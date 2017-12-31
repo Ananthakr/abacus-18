@@ -1,0 +1,80 @@
+.reg-container{
+    margin-top: -9px;
+    min-height: 40vh;
+    background-color: #000000;
+    color: #ffffff;
+    padding:10px 10vw 75px 10vw; 
+}
+.reg-container .form-holder{
+    margin: 0 auto;
+    display: block;   
+}
+.form-control{
+    color: #ffffff;
+    background-color: #121212;
+    border: 2px solid #222;
+    border-radius: 1.3px;
+}
+.form-group label{
+    color: #FFFFFF;
+}
+.form-holder .btn{
+    display: block;
+    margin: 0 auto;
+    background-color: #F57E16;
+    border-color: #F57E16;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    padding: .4rem 3rem;
+    transition: 0.2s 0s linear;
+    margin-top: 25px;
+}
+.form-control:focus{
+    border-color: #121212;
+    box-shadow: 0 0 0 0.1rem #121212;
+}
+.form-holder .btn:focus{
+    box-shadow: 3px 3px 10px 2px #080808;
+}
+.btn-primary:not([disabled]):not(.disabled).active, .btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    background-color: #C96813;
+    border-color: #C96813;
+    box-shadow: 3px 3px 10px 2px #080808;
+    color: #dcdcdc;
+}
+.form-holder .btn:hover{
+    box-shadow: 3px 3px 10px 2px #080808;
+    transform: translateZ(2px);
+    border-color: #F57E16;
+    color: #dcdcdc;
+    background-color: #C96813;
+    transition: 0.3s 0s ease-in-out;
+}
+.reg-frwd-btn{
+    width: 100%;
+    padding: 25px 10px;
+}
+.reg-frwd-btn a{
+    margin:5px 5px 25px 5px; 
+    color: #C96813;
+    cursor: pointer;
+    text-align: right;
+}
+
+.spinner {
+    width:32px;
+    height:32px;
+    border-radius:32px;
+    box-sizing:border-box;
+    border:2px groove white;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-16px 0px 0px -16px;
+    border-top-color:rgba(255,255,255,1);
+    border-left-color:rgba(255,255,255,0.9);
+    border-bottom-color:rgba(255,255,255,0.8);
+    border-right-color:rgba(255,255,255,0.7);
+    animation: rotate 1000ms infinite linear;
+    transform:translateZ(0px);
+  }

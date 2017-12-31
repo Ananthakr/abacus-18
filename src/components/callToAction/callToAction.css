@@ -1,0 +1,49 @@
+.call-to-action-container{
+    min-height: 200px;
+    background: #f57e16;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+}
+
+.call-to-action-text{
+    font-size: 3vw;
+    display: inline;
+    margin: 10px;
+}
+.call-to-action-btn{
+    background-color: #000000;
+    color: #ffffff;
+    display: inline-block;
+    font-weight: 400;
+    margin: 10px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .5rem 3rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    border-radius: .5rem;
+    transition: background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.call-to-action-btn:focus,.call-to-action-btn:hover,.call-to-action-btn:active{
+    box-shadow: none;
+    color: #f57e16;
+}
+@media(max-width:960px) and (orientation:portrait){
+    .call-to-action-text{
+        font-size: 6vw;
+        text-align: center;
+        display: block;
+    }
+    .call-to-action-btn{
+        display: block;
+        margin: 15px auto;
+    }
+}

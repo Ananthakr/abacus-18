@@ -1,0 +1,29 @@
+.sponsors-title{
+    text-align: left;
+    color: #1f1f1f;
+    font-size: 6vw;
+    font-family: 'Barlow Semi Condensed',sans-serif;
+    left: 0;
+    margin: 20px 0px;
+}
+.sponsors-title .dash{
+    color: #f57e16;
+    padding: 2px;
+    font-size: 2vw;
+    display:inline-block;
+    width:50px;
+    border-bottom: solid 3px #f57e16;
+    position: relative;
+    top: -14%;
+}
+.sponsors-item img{
+    width: 60%;
+    display: block;
+    margin: 10px auto;
+    filter:grayscale(100%);
+}
+@media(max-width:960px)and (orientation:portrait){
+    .sponsors-title{
+        font-size: 12vw;
+    }
+}

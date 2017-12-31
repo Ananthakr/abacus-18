@@ -1,0 +1,67 @@
+/*
+*Custom css for home view
+*/
+.home-container{
+    min-height: 100vh;
+    background-color: #000000;
+}
+.svg-icon{
+    width: 100%;
+    height: 100vh;
+    background-image: url("logo.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+.svg-icon .title-1{
+    color:#FFFFFF;
+    font-size:6vw;
+    animation-delay: 0.9s;
+    animation-duration: 1s;
+}
+.svg-icon .title-2{
+    color:#f57e16;
+    font-size:6vw;
+    animation-delay: 0.9s;
+    animation-duration: 1s;
+}
+.text{
+    font-size: 2vw;
+    color: #FFFFFF;
+    animation-delay: 0.8s;
+    animation-duration: 1.5s;
+}
+.info-text{
+    font-size: 1.5vw;
+    color:#f57e16;
+    font-weight: 200;
+    animation-delay: 1s;
+    animation-duration: 1.5s;
+}
+
+@media(max-width:960px) and (orientation:portrait){   
+    .svg-icon{
+        background-size: 90%;
+    }
+    .svg-icon .title-1{
+        font-size:12vw;
+    }
+    .svg-icon .title-2{
+        font-size:11vw;
+    }
+    .text{
+        font-size: 3.5vw;
+    }
+    .info-text{
+        font-size: 2.5vw;
+    }
+}
+
+.link-text{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.link-text:hover,.link-text:focus,.link-text:active{
+    color: #f57e16;
+}
+
