@@ -5,6 +5,8 @@
     font-family: 'Barlow Semi Condensed',sans-serif;
     left: 0;
     margin: 20px 0px;
+    animation-delay: 0s;
+    animation-duration: 1s;
 }
 .sponsors-title .dash{
     color: #f57e16;
@@ -15,6 +17,21 @@
     border-bottom: solid 3px #f57e16;
     position: relative;
     top: -14%;
+}
+.sponsors-item{
+    animation-duration: 0.8s;
+}
+.sponsors-item:nth-child(1){
+    animation-delay: 0.5s;
+}
+.sponsors-item:nth-child(2){
+    animation-delay: 0.6s;
+}
+.sponsors-item:nth-child(3){
+    animation-delay: 0.7s;
+}
+.sponsors-item:nth-child(4){
+    animation-delay: 0.8s;
 }
 .sponsors-item img{
     width: 60%;

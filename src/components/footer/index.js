@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import VisibilitySensor from 'react-visibility-sensor';
 import './footer.css';
 import Mail from '../../images/envelope.png';
 import Phone from '../../images/phone-call.png';
@@ -7,12 +8,29 @@ import Facebook from '../../images/facebook.svg';
 import Twitter from '../../images/twitter.svg';
 
 export default class Footer extends Component{
+    
+        
+   constructor(){
+        super();
+        this.state = {
+            visible:false,
+        }
+        this.onVisibilityChange = this.onVisibilityChange.bind(this);
+    }
+
+    onVisibilityChange(isVisible){
+        if(isVisible)
+            this.setState({visible:true});
+    }
+
+
     render(){
         return(
             <footer>
                 <div className="container-fluid">
+                <VisibilitySensor scrollCheck={true} active={!this.state.visible} partialVisibility={true} onChange={this.onVisibilityChange}/>
                     <div className="row">
-                        <div className="col-sm-4 footer-block">
+                        <div className={(this.state.visible)?"col-sm-4 footer-block animated zoomIn":"invisible col-sm-4 footer-block"}>
                             <div className="media">
                                 <img className="align-self-center mr-3 footer-icon" src={Location} alt="Address Icon"/>
                                 <div className="media-body align-self-center footer-text">
@@ -20,7 +38,7 @@ export default class Footer extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-4 footer-block">
+                        <div className={(this.state.visible)?"col-sm-4 footer-block animated zoomIn":"invisible col-sm-4 footer-block"}>
                             <div className="media">
                                 <img className="align-self-center mr-3 footer-icon" src={Mail} alt="Mail Icon"/>
                                 <div className="media-body align-self-center footer-text">
@@ -28,7 +46,7 @@ export default class Footer extends Component{
                                 </div>
                             </div>
                         </div>
-                        <div className="col-sm-4 footer-block">
+                        <div className={(this.state.visible)?"col-sm-4 footer-block animated zoomIn":"invisible col-sm-4 footer-block"}>
                             <div className="media">
                                 <img className="align-self-center mr-3 footer-icon" src={Phone} alt="Phone Icon"/>
                                 <div className="media-body align-self-center footer-text">

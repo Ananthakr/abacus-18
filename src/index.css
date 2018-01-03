@@ -29,8 +29,11 @@ section{
   font-size: 4.5vw;
   color:#FFFFFF;
   text-align: center;
+  animation:1s fadeIn;
 }
-
+.invisible{
+    visibility: hidden;
+}
 /*For menu*/
 label .menu {
   position: absolute;

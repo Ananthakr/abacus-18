@@ -70,49 +70,49 @@ export default class Register extends Component{
                     <form>
                         <div className="row">
                             <div className="form-group col-sm-6">
-                                <label for="first-name">First Name*</label>
+                                <label htmlFor="first-name">First Name*</label>
                                 <input value={this.state.firstName} onChange={(e)=>this.setState({firstName:e.target.value})} id="first-name" type="text"  className="form-control" placeholder="First Name"/>
                             </div>
                             <div className="form-group col-sm-6">
-                                <label for="last-name">Last Name</label>
+                                <label htmlFor="last-name">Last Name</label>
                                 <input value={this.state.lastName} onChange={(e)=>this.setState({lastName:e.target.value})} id="last-name" type="text" className="form-control" placeholder="Last Name"/>
                             </div>
                         </div>
                         <div className="form-group">
-                            <label for="address">Address</label>
+                            <label htmlFor="address">Address</label>
                             <textarea value={this.state.address} onChange={(e)=>this.setState({address:e.target.value})} id="address" className="form-control" rows="2" placeholder="Your Street and Area"></textarea>
                         </div>
                         <div className="row">
                                 <div className="form-group col-sm-6">
-                                <label for="city">City*</label>
+                                <label htmlFor="city">City*</label>
                                 <input value={this.state.city} onChange={(e)=>this.setState({city:e.target.value})} id="city" type="text" className="form-control" placeholder="Your City"/>
                             </div>
                             <div className="form-group col-sm-6">
-                                <label for="phone-no">Phone number*</label>
+                                <label htmlFor="phone-no">Phone number*</label>
                                 <input value={this.state.phone} onChange={(e)=>this.setState({phone:e.target.value})} id="phone-no" type="text" className="form-control" placeholder="(+91)"/>
                             </div>
                         </div>
                         <div className="form-group">
-                            <label for="email-address">Email address*</label>
+                            <label htmlFor="email-address">Email address*</label>
                             <input value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} id="email-address" type="email" className="form-control" placeholder="name@mail.com"/>
                         </div>
                         <div className="row">
                             <div className="form-group col-sm-8">
-                                <label for="college">College/Univerisity*</label>
+                                <label htmlFor="college">College/Univerisity*</label>
                                 <input value={this.state.college} onChange={(e)=>this.setState({college:e.target.value})} id="college" type="text" className="form-control" placeholder="Your College/Univerisity"/>
                             </div>
                             <div className="form-group col-sm-4">
-                                <label for="college-location">College/Univerisity Location</label>
+                                <label htmlFor="college-location">College/Univerisity Location</label>
                                 <input value={this.state.collegeLoc} onChange={(e)=>this.setState({collegeLoc:e.target.value})} id="college-location" type="email" className="form-control" placeholder="Your College/Univeristy's Location"/>
                             </div>
                         </div>
                         <div className="row">
                             <div className="form-group col-sm-6">
-                                <label for="dept">Department*</label>
+                                <label htmlFor="dept">Department*</label>
                                 <input value={this.state.dept} onChange={(e)=>this.setState({dept:e.target.value})} id="dept" type="text" className="form-control" placeholder="Your Dept"/>
                             </div>
                             <div className="form-group col-sm-6">
-                                <label for="year">Year</label>
+                                <label htmlFor="year">Year</label>
                                 <select value={this.state.year} onChange={(e)=>this.setState({year:e.target.value})} id="year" className="form-control" >
                                 <option>1</option>
                                 <option>2</option>
@@ -124,7 +124,7 @@ export default class Register extends Component{
                         </div>
                         <div className="row">
                             <div className="form-group col-sm-6">
-                                <label for="gender">Gender</label>
+                                <label htmlFor="gender">Gender</label>
                                 <select value={this.state.gender} onChange={(e)=>this.setState({gender:e.target.value})} className="form-control" >
                                     <option>Male</option>
                                     <option>Female</option>
@@ -132,7 +132,7 @@ export default class Register extends Component{
                                 </select>
                             </div>
                             <div className="form-group col-sm-6">
-                                <label for="hometown">Hometown</label>
+                                <label htmlFor="hometown">Hometown</label>
                                 <input value={this.state.homeTown} onChange={(e)=>this.setState({homeTown:e.target.value})} id="hometown" type="text" className="form-control" placeholder="Your Hometown"/>
                             </div>
                         </div>

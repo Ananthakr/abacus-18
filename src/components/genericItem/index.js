@@ -18,7 +18,7 @@ export default class GenericItem extends Component{
     render(){
         return(
             <div className="item-container">
-               <ul className="nav justify-content-center">
+               <ul className="nav justify-content-center animated fadeIn">
                     <li className="nav-item">
                         <div className={(this.state.active===0)?"nav-link active":"nav-link"} onClick={()=> this.setState({active:0})}>description</div>
                     </li>

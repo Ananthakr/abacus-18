@@ -63,49 +63,49 @@ export default class SA extends Component{
                 <form>
                     <div className="row">
                         <div class="form-group col-sm-6">
-                            <label for="first-name">First Name*</label>
+                            <label htmlFor="first-name">First Name*</label>
                             <input value={this.state.firstName} onChange={(e)=>this.setState({firstName:e.target.value})} id="first-name" type="text" class="form-control" placeholder="First Name"/>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="last-name">Last Name</label>
+                            <label htmlFor="last-name">Last Name</label>
                             <input value={this.state.lastName} onChange={(e)=>this.setState({lastName:e.target.value})} id="last-name" type="text" class="form-control" placeholder="Last Name"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="address">Address</label>
+                        <label htmlFor="address">Address</label>
                         <textarea value={this.state.address} onChange={(e)=>this.setState({address:e.target.value})} id="address" class="form-control" rows="2" placeholder="Your Street and Area"></textarea>
                     </div>
                     <div className="row">
                             <div class="form-group col-sm-6">
-                            <label for="city">City*</label>
+                            <label htmlFor="city">City*</label>
                             <input value={this.state.city} onChange={(e)=>this.setState({city:e.target.value})} id="city" type="text" class="form-control" placeholder="Your City"/>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="phone-no">Phone number*</label>
+                            <label htmlFor="phone-no">Phone number*</label>
                             <input value={this.state.phone} onChange={(e)=>this.setState({phone:e.target.value})} id="phone-no" type="text" class="form-control" placeholder="(+91)"/>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email-address">Email address*</label>
+                        <label htmlFor="email-address">Email address*</label>
                         <input value={this.state.email} onChange={(e)=>this.setState({email:e.target.value})} id="email-address" type="email" class="form-control" placeholder="name@mail.com"/>
                     </div>
                     <div className="row">
                         <div class="form-group col-sm-8">
-                            <label for="college">College/Univerisity*</label>
+                            <label htmlFor="college">College/Univerisity*</label>
                             <input value={this.state.college} onChange={(e)=>this.setState({college:e.target.value})} id="college" type="text" class="form-control" placeholder="Your College/Univerisity"/>
                         </div>
                         <div class="form-group col-sm-4">
-                            <label for="college-location">College/Univerisity Location</label>
+                            <label htmlFor="college-location">College/Univerisity Location</label>
                             <input value={this.state.collegeLoc} onChange={(e)=>this.setState({collegeLoc:e.target.value})} id="college-location" type="email" class="form-control" placeholder="Your College/Univeristy's Location"/>
                         </div>
                     </div>
                     <div className="row">
                         <div class="form-group col-sm-6">
-                            <label for="dept">Department*</label>
+                            <label htmlFor="dept">Department*</label>
                             <input value={this.state.dept} onChange={(e)=>this.setState({dept:e.target.value})} id="dept" type="text" class="form-control" placeholder="Your Dept"/>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="year">Year</label>
+                            <label htmlFor="year">Year</label>
                             <select value={this.state.year} onChange={(e)=>this.setState({year:e.target.value})} id="year" class="form-control" >
                             <option>1</option>
                             <option>2</option>
@@ -117,7 +117,7 @@ export default class SA extends Component{
                     </div>
                     <div className="row">
                         <div class="form-group col-sm-6">
-                            <label for="gender">Gender</label>
+                            <label htmlFor="gender">Gender</label>
                             <select value={this.state.gender} onChange={(e)=>this.setState({gender:e.target.value})} class="form-control" id="gender">
                                 <option>Male</option>
                                 <option>Female</option>
@@ -125,28 +125,28 @@ export default class SA extends Component{
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label for="hometown">Hometown</label>
+                            <label htmlFor="hometown">Hometown</label>
                             <input value={this.state.homeTown} onChange={(e)=>this.setState({homeTown:e.target.value})} id="hometown" type="text" class="form-control" placeholder="Your Hometown"/>
                         </div>
                     </div>
                     <div class="form-group">
-                            <label for="gpa">GPA</label>
+                            <label htmlFor="gpa">GPA</label>
                             <input value={this.state.gpa} onChange={(e)=>this.setState({gpa:e.target.value})} id="gpa" type="text" class="form-control" placeholder="Your GPA"/>
                     </div>
                     <div class="form-group">
-                        <label for="why-sa">Why do you want to be a Student Ambassador?*</label>
+                        <label htmlFor="why-sa">Why do you want to be a Student Ambassador?*</label>
                         <textarea value={this.state.whySA} onChange={(e)=>this.setState({whySA:e.target.value})}id="why-sa" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="extra-curricular">Have you been a part of any volunteering/extra curricular activities..? If any mention. </label>
+                        <label htmlFor="extra-curricular">Have you been a part of any volunteering/extra curricular activities..? If any mention. </label>
                         <textarea value={this.state.extraCur} onChange={(e)=>this.setState({extraCur:e.target.value})} id="extra-curricular" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="leadership-roles">Leadership roles if any? </label>
+                        <label htmlFor="leadership-roles">Leadership roles if any? </label>
                         <textarea value={this.state.leadership} onChange={(e)=>this.setState({leadership:e.target.value})} id="leadership-roles" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="best-qualities">What are the best qualities you possess that can help you to be a Student Smbassador?*</label>
+                        <label htmlFor="best-qualities">What are the best qualities you possess that can help you to be a Student Smbassador?*</label>
                         <textarea value={this.state.bestQs} onChange={(e)=>this.setState({bestQs:e.target.value})} id="best-qualities" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
 

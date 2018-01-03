@@ -8,6 +8,16 @@
     align-items: center;
     flex-direction: column;
     padding: 5px;
+    animation-duration: 0.8s;
+}
+.col-md-4:nth-child(1) .team-item{
+    animation-delay: 0.3s;
+}
+.col-md-4:nth-child(2) .team-item{
+    animation-delay: 0.4s;
+}
+.col-md-4:nth-child(3) .team-item{
+    animation-delay: 0.5s;
 }
 .team-item img{
     width:200px;
@@ -34,6 +44,8 @@
     border-right: solid 3px #f57e16;
     position: relative;
     left: 6%;
+    animation-delay: 0.1s;
+    animation-duration: 0.5s;
 }
 .team-title{
     text-align: left;
