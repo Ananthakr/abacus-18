@@ -3,15 +3,25 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
 import './index.css';
 import './animate.css';
-import Home from './views/home';
-import Events from './views/events';
-import TechEvents from './views/techEvents';
-import GeneralEvents from './views/generalEvents';
-import Item from './views/item';
+import Async from 'react-code-splitting';
 import registerServiceWorker from './registerServiceWorker';
-import Workshops from './views/workshops';
-import SA from './views/studentAmbassador';
-import Register from './views/register';
+import Item from './views/item';
+//const Item = () => <Async load={import('./views/item')}/>
+//All components are async'ly loaded
+//import Home from './views/home';
+const Home = () => <Async load={import('./views/home')}/>
+//import Events from './views/events';
+const Events = () => <Async load={import('./views/events')}/>
+//import TechEvents from './views/techEvents';
+const TechEvents = () => <Async load={import('./views/techEvents')}/>
+//import GeneralEvents from './views/generalEvents';
+const GeneralEvents = () => <Async load={import('./views/generalEvents')}/>
+//import Workshops from './views/workshops';
+const Workshops = () => <Async load={import('./views/workshops')}/>
+//import SA from './views/studentAmbassador';
+const SA = () => <Async load={import('./views/studentAmbassador')}/>
+//import Register from './views/register';
+const Register = () => <Async load={import('./views/register')}/>
 
 ReactDOM.render(
     <Router>
