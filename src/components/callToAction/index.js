@@ -1,4 +1,5 @@
 import React,{Component} from 'react';
+import {Link} from 'react-router-dom';
 import './callToAction.css';
 
 export default class CallToAction extends Component{
@@ -7,7 +8,7 @@ export default class CallToAction extends Component{
             <div className="container-fluid call-to-action-container">
                 <div className="row">
                     <span className="call-to-action-text">Interested to attend? Register to get notified.</span>
-                    <a href="#" role="button" className="btn call-to-action-btn">Register</a>
+                    <Link to='/register' role="button" className="btn call-to-action-btn">Register</Link>
                 </div>
             </div>
         )

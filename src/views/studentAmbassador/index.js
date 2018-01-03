@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import Menu from '../../components/menu'
 import './sa.css';
-import * as firebase from 'firebase';
+/*import * as firebase from 'firebase';
 import firestore from 'firebase/firestore';
 
 // Initialize Firebase
@@ -16,7 +16,7 @@ var config = {
 if (!firebase.apps.length) {
     firebase.initializeApp(config);
 }
-var db=firebase.firestore();
+var db=firebase.firestore();*/
 
 export default class SA extends Component{
     
@@ -35,14 +35,14 @@ export default class SA extends Component{
         if(this.state.firstName!==""&&this.state.city!==""&&this.state.phone!==""&&this.state.email!==""&&this.state.college!==""&&this.state.dept!==""&&this.state.whySA!==""&&this.state.bestQs!==""){
             console.log("submitting");
             
-            db.collection("student-ambassador").add({
+            /*db.collection("student-ambassador").add({
             firstName:this.state.firstName,lastname:this.state.lastName,address:this.state.address,email:this.state.email,college:this.state.college,collegeLocation:this.state.collegeLoc,year:this.state.year,gender:this.state.gender,hometown:this.state.homeTown,gpa:this.state.gpa,whySA:this.state.whySA,extraCur:this.state.extraCur,leadership:this.state.leadership,bestQs:this.state.bestQs
             }).then(function(docRef) {
                 console.log("Document written with ID: ", docRef.id);
             })
             .catch(function(error) {
                 console.error("Error adding document: ", error);
-            });
+            });*/
 
             this.setState({successVisible:true,alertVisible:false});
         }else{

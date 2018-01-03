@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import Menu from '../../components/menu';
 import {Link} from 'react-router-dom';
 import './register.css';
-import * as firebase from 'firebase';
+/*import * as firebase from 'firebase';
 import firestore from 'firebase/firestore';
 
 // Initialize Firebase
@@ -18,7 +18,7 @@ if (!firebase.apps.length) {
     firebase.initializeApp(config);
 }
 var db=firebase.firestore();
-
+*/
 export default class Register extends Component{    
 
     constructor(){
@@ -36,14 +36,14 @@ export default class Register extends Component{
         if(this.state.firstName!==""&&this.state.city!==""&&this.state.phone!==""&&this.state.email!==""&&this.state.college!==""&&this.state.dept!==""){
             console.log("submitting");
             
-            db.collection("registration").add({
+            /*db.collection("registration").add({
             firstName:this.state.firstName,lastname:this.state.lastName,address:this.state.address,email:this.state.email,college:this.state.college,collegeLocation:this.state.collegeLoc,year:this.state.year,gender:this.state.gender,hometown:this.state.homeTown,loading:false,
             }).then(function(docRef) {
                 console.log("Document written with ID: ", docRef.id);
             })
             .catch(function(error) {
                 console.error("Error adding document: ", error);
-            });
+            });*/
 
             this.setState({successVisible:true,alertVisible:false});
         }else{
