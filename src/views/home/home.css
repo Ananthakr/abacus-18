@@ -16,26 +16,26 @@
 .svg-icon .title-1{
     color:#FFFFFF;
     font-size:6vw;
-    animation-delay: 0.9s;
+    animation-delay: 0s;
     animation-duration: 1s;
 }
 .svg-icon .title-2{
     color:#f57e16;
     font-size:6vw;
-    animation-delay: 0.9s;
+    animation-delay: 0s;
     animation-duration: 1s;
 }
 .text{
     font-size: 2vw;
     color: #FFFFFF;
-    animation-delay: 0.8s;
+    animation-delay: 0s;
     animation-duration: 1.5s;
 }
 .info-text{
     font-size: 1.5vw;
     color:#f57e16;
     font-weight: 200;
-    animation-delay: 1s;
+    animation-delay: 0.1s;
     animation-duration: 1.5s;
 }
 
