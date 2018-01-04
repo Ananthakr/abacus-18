@@ -3,14 +3,6 @@ import { Link } from 'react-router-dom';
 import './menu.css';
 
 export default class Menu extends Component{
-    
-   /* constructor(){
-        super();
-        console.log("Menu Initiated");
-    }
-    componentDidMount(){
-        console.log("Menu mounted");
-    }*/
 
     render(){
         return(
