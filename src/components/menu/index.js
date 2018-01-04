@@ -7,7 +7,7 @@ export default class Menu extends Component{
     render(){
         return(
             <label>
-                <input type='checkbox' defaultChecked={false}/>
+                <input type='checkbox'/>
                 <span className='menu'>
                     <span className='hamburger'></span>
                 </span>
