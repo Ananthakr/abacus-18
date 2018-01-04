@@ -19,15 +19,18 @@ if (!firebase.apps.length) {
 }
 var db=firebase.firestore();
 */
+var db = undefined;
 export default class Register extends Component{    
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             firstName:"",lastName:"",address:"",city:"",phone:"",email:"",college:"",collegeLoc:"",dept:"",year:'1',gender:'Male',homeTown:"",alertVisible:false,successVisible:false,
         };
         this.handleSubmit = this.handleSubmit.bind(this);
     }
+
+    
 
     handleSubmit(e){
         e.preventDefault();
@@ -36,6 +39,7 @@ export default class Register extends Component{
         if(this.state.firstName!==""&&this.state.city!==""&&this.state.phone!==""&&this.state.email!==""&&this.state.college!==""&&this.state.dept!==""){
             console.log("submitting");
             
+           
             /*db.collection("registration").add({
             firstName:this.state.firstName,lastname:this.state.lastName,address:this.state.address,email:this.state.email,college:this.state.college,collegeLocation:this.state.collegeLoc,year:this.state.year,gender:this.state.gender,hometown:this.state.homeTown,loading:false,
             }).then(function(docRef) {
@@ -137,8 +141,8 @@ export default class Register extends Component{
                             </div>
                         </div>
                         { (this.state.alertVisible) ?
-                            <div class="alert alert-warning alert-dismissible fade show">
-                                <button onClick={()=>this.setState({alertVisible:false})} type="button" class="close" >
+                            <div className="alert alert-warning alert-dismissible fade show">
+                                <button onClick={()=>this.setState({alertVisible:false})} type="button" className="close" >
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                                 <strong>Sorry!</strong> You should check in on some of those fields above.
@@ -146,8 +150,8 @@ export default class Register extends Component{
                         : ""
                         }
                         { (this.state.successVisible) ?
-                            <div class="alert alert-success alert-dismissible fade show">
-                                <button onClick={()=>this.setState({successVisible:false})} type="button" class="close" >
+                            <div className="alert alert-success alert-dismissible fade show">
+                                <button onClick={()=>this.setState({successVisible:false})} type="button" className="close" >
                                     <span aria-hidden="true">&times;</span>
                                 </button>
                                 <strong>Thank you!</strong> We will get back to you soon
