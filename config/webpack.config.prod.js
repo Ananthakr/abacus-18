@@ -109,7 +109,7 @@ module.exports = {
       "react": "preact-compat",
       "react-dom": "preact-compat",
       // Not necessary unless you consume a module using `createClass`
-      'create-react-class': 'preact-compat/lib/create-react-class'
+      'create-react-class': 'preact-compat/lib/create-react-class',
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).
