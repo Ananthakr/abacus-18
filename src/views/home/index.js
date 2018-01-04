@@ -1,14 +1,33 @@
 import React, { Component } from 'react';
+import Async from 'react-code-splitting';
 import './home.css';
 import Menu from '../../components/menu';
-import Overview from '../../components/overview';
-import About from '../../components/about';
-import Team from '../../components/team';
-import Sponsors from '../../components/sponsors';
-import CallToAction from '../../components/callToAction';
-import Footer from '../../components/footer';
+//const Menu = () => <Async load={import('../../components/menu')}/>
+//import Overview from '../../components/overview';
+const Overview = () => <Async load={import('../../components/overview')}/>
+//import About from '../../components/about';
+const About = () => <Async load={import('../../components/about')}/>
+//import Team from '../../components/team';
+const Team = () => <Async load={import('../../components/team')}/>
+//import Sponsors from '../../components/sponsors';
+const Sponsors = () => <Async load={import('../../components/sponsors')}/>
+//import CallToAction from '../../components/callToAction';
+const CallToAction = () => <Async load={import('../../components/callToAction')}/>
+//import Footer from '../../components/footer';
+const Footer = () => <Async load={import('../../components/footer')}/>
 
 export default class Home extends Component{
+   constructor(){
+       super();
+       this.state = {
+           mount:false,
+       }
+   }
+   
+   componentDidMount(){
+        this.setState({mount:true});
+   }
+
     render(){
         return(
             <main>
@@ -25,13 +44,17 @@ export default class Home extends Component{
                         </div>
                     </div>
                 </div>
-
-                <Overview/>
-                <About/>
-                <Team/>
-                <Sponsors/>
-                <CallToAction/>
-                <Footer/>
+                {(this.state.mount)?
+                    <div>
+                        <Overview/>
+                        <About/>
+                        <Team/>
+                        <Sponsors/>
+                        <CallToAction/>
+                        <Footer/>
+                    </div>
+                    : ""
+                }
             </main>
         )
     }
