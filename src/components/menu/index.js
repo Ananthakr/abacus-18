@@ -4,18 +4,18 @@ import './menu.css';
 
 export default class Menu extends Component{
     
-    constructor(){
+   /* constructor(){
         super();
         console.log("Menu Initiated");
     }
     componentDidMount(){
         console.log("Menu mounted");
-    }
+    }*/
 
     render(){
         return(
             <label>
-                <input type='checkbox'/>
+                <input type='checkbox' defaultChecked={false}/>
                 <span className='menu'>
                     <span className='hamburger'></span>
                 </span>
