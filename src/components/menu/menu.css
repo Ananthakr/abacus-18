@@ -45,33 +45,6 @@ label .menu {
   label input {
     display: none;
   }
-  label input:checked + .menu {
-    -webkit-box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-            box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
-    border-radius: 0;
-    background: #FFFFFF; 
-  }
-  label input:checked + .menu .hamburger {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-     background: #000000;
-  }
-  label input:checked + .menu .hamburger:after {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    bottom: 0;
-    background: #000000;
-  }
-  label input:checked + .menu .hamburger:before {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    top: 0;
-    background: #000000;
-  }
-  label input:checked + .menu + ul {
-    display: block;
-  }
-  
   label ul {
     z-index: 200;
     position: absolute;
@@ -97,6 +70,33 @@ label .menu {
   label a:hover{
     color:#f57e16;
     text-decoration: none;
+  }
+
+  label input:checked + .menu {
+    -webkit-box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+            box-shadow: 0 0 0 100vw #FFF, 0 0 0 100vh #FFF;
+    border-radius: 0;
+    background: #FFFFFF; 
+  }
+  label input:checked + .menu .hamburger {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+     background: #000000;
+  }
+  label input:checked + .menu .hamburger:after {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    bottom: 0;
+    background: #000000;
+  }
+  label input:checked + .menu .hamburger:before {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    top: 0;
+    background: #000000;
+  }
+  label input:checked + .menu + ul {
+    display: block;
   }
   
   
