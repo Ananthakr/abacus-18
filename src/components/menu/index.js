@@ -1,5 +1,6 @@
 import React,{Component} from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import './menu.css';
 
 export default class Menu extends Component{
     
@@ -14,7 +15,7 @@ export default class Menu extends Component{
     render(){
         return(
             <label>
-                <input type='checkbox' defaultValue="off"/>
+                <input type='checkbox'/>
                 <span className='menu'>
                     <span className='hamburger'></span>
                 </span>

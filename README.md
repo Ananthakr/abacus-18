@@ -6,6 +6,8 @@ It is developed with
   - React js
   - Bootstrap 4
 
+Preact js - version is available at ```eject-cra``` branch
+
 Use 
 ```
 $git clone https://github.com/Ananthakr/abacus-18.git
