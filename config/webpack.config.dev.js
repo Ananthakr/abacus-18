@@ -88,9 +88,12 @@ module.exports = {
       // Support React Native Web
       // https://www.smashingmagazine.com/2016/08/a-glimpse-into-the-future-with-react-native-for-web/
       //'react-native': 'react-native-web',
+      
       //Preact alias
       "react": "preact-compat",
-      "react-dom": "preact-compat"
+      "react-dom": "preact-compat",
+      // Not necessary unless you consume a module using `createClass`
+      'create-react-class': 'preact-compat/lib/create-react-class'
     },
     plugins: [
       // Prevents users from importing files from outside of src/ (or node_modules/).
