@@ -33,6 +33,10 @@
           var tmp = data.data.event;
           OneSignal.sendTag("event", tmp, function(tagsSent) {
             console.log("Successfully subscribed to "+tmp);
+            OneSignal.sendSelfNotification(
+                "Thanks for subscribing!",
+                "We will notify you."
+              );
           });
         }
       }]);
