@@ -26,6 +26,12 @@
           },
         });
       });
+      OneSignal.push(["addListenerForNotificationOpened", function(data) {
+        console.log("Received NotificationOpened:");
+        console.log(data);
+        /* add data as tag */
+        OneSignal.sendTag(data);
+      }]);
     </script>
     <style>
         /* latin */
