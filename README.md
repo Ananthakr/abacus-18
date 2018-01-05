@@ -7,6 +7,7 @@ It is developed with
   - Bootstrap 4
 
 Preact js - version is available at ```eject-cra``` branch
+OneSignal is used for Push notifications
 
 Use 
 ```
