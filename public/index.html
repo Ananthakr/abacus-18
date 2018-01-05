@@ -13,6 +13,20 @@
     
     <title>Abacus'18</title>
     <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"-->
+    <!--One signal for push notifications-->
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "57f7968c-dac2-47e0-9263-54f2d8c73211",
+          autoRegister: false,
+          notifyButton: {
+            enable: true,
+          },
+        });
+      });
+    </script>
     <style>
         /* latin */
         @font-face {
