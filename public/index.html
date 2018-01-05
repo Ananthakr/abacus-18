@@ -29,9 +29,12 @@
       OneSignal.push(["addListenerForNotificationOpened", function(data) {
         console.log("Received NotificationOpened:");
         console.log(data.data);
-        //console.log(data);
-        /* add data as tag */
-        OneSignal.sendTag(data.data);
+        if(data.data.event != undefined){
+          var tmp = data.data.event;
+          OneSignal.sendTag("event", tmp, function(tagsSent) {
+            console.log("Successfully subscribed to "+tmp);
+          });
+        }
       }]);
     </script>
     <style>
