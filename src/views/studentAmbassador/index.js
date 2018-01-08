@@ -140,15 +140,15 @@ export default class SA extends Component{
                         <textarea value={this.state.whySA} onChange={(e)=>this.setState({whySA:e.target.value})}id="why-sa" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label htmlFor="extra-curricular">Have you been a part of any volunteering/extra curricular activities..? If any mention. </label>
+                        <label htmlFor="extra-curricular">Have you been a part of any volunteering/extra-curricular activities? If any, please mention below. </label>
                         <textarea value={this.state.extraCur} onChange={(e)=>this.setState({extraCur:e.target.value})} id="extra-curricular" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label htmlFor="leadership-roles">Leadership roles if any? </label>
+                        <label htmlFor="leadership-roles">Leadership roles, if any?</label>
                         <textarea value={this.state.leadership} onChange={(e)=>this.setState({leadership:e.target.value})} id="leadership-roles" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label htmlFor="best-qualities">What are the best qualities you possess that can help you to be a Student Smbassador?*</label>
+                        <label htmlFor="best-qualities">What qualities do you possess that will make you a suitable Student Ambassador?*</label>
                         <textarea value={this.state.bestQs} onChange={(e)=>this.setState({bestQs:e.target.value})} id="best-qualities" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
 
@@ -180,11 +180,11 @@ export default class SA extends Component{
                         <div className="col-lg-8 col-md-10 criteria-holder">
                             <h5>Criteria</h5>
                             <div className="criteria-content">
-                                <p className="info-text">(Read Criteria before applying)</p>
+                                <p className="info-text">Interested in becoming a Student Ambassador for Abacus’18? Check out the criteria below.</p>
                                 <ul>
                                     <li>Must be an undergraduate with second year standing and above.</li>
                                     <li>Must maintain a satisfactory academic score.</li>
-                                    <li>Must be available to contact at any time.</li>
+                                    <li>Must be available to contact at any time</li>
                                     <li>Must make atleast 10 teams of students to join workshops & 15 persons to join the events.</li>
                                     <li>Represent him/her as a representative of their college.</li>
                                     <li>Must maintain a network of contacts of students in their college.</li>

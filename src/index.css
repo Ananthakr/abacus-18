@@ -40,7 +40,8 @@ section{
   margin:5px 5px 15px 5px; 
   color: #C96813;
   cursor: pointer;
-  display: inline;
+  display: flex;
+  justify-content: center;
 }
 .back-btn:hover{
   text-decoration: underline;

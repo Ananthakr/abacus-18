@@ -68,7 +68,7 @@ export default class Register extends Component{
             <div className="container-fluid reg-container">
                 <div className="row">
                 <div className="col-lg-8 col-md-10 form-holder">
-                <div className="row"><div className="reg-frwd-btn"><Link to="/sa">Interested to be Student Ambassador? &rarr;</Link></div></div>
+                <div className="row"><div className="reg-frwd-btn"><Link to="/sa">Interested in being a Student Ambassador? &rarr;</Link></div></div>
                     <form>
                         <div className="row">
                             <div className="form-group col-sm-6">

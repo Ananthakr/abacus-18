@@ -59,8 +59,8 @@ export default class Footer extends Component{
                         <div className="footer-social-media">
                             <p>Follow us on</p>
                             <div className="footer-sm-icon-holder">
-                                <a href="#"><img src={Facebook} alt="Facebook Link"/></a>
-                                <a href="#"><img src={Twitter} alt="Twitter Link"/></a>
+                                <a href="https://www.facebook.com/abacus.cse"><img src={Facebook} alt="Facebook Link"/></a>
+                                <a href="https://twitter.com/csea_abacus"><img src={Twitter} alt="Twitter Link"/></a>
                             </div>
                         </div>
                     </div>
@@ -69,7 +69,7 @@ export default class Footer extends Component{
                             <p>All rights reserved.</p>
                         </div>
                         <div className="col">
-                            <p>Designed &amp; Developed in <span className="footer-love">&lt;3</span> with CEG</p>
+                            <p> Developed with <span className="footer-love">React, Preact &amp; Bootstrap 4 </span></p>
                         </div>
                     </div>
                 </div>

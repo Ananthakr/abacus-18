@@ -39,9 +39,9 @@ export default class Menu extends Component{
                     <li>
                         <Link to="/register">Register</Link>
                     </li>
-                    <li>
+                    {/*<li>
                         <Link to="/">Experiments</Link>
-                    </li>
+                    </li>*/}
                 </ul>
             </label>
         )
