@@ -36,6 +36,9 @@
 .team-item p{
     color: #ffffff;
 }
+.team-row{
+    justify-content: center;
+}
 .team-title .dash{
     color: #f57e16;
     padding: 2px;

@@ -69,13 +69,7 @@ export default class Team extends Component{
                                 <p>Secretary, CSEA</p>
                             </div>
                         </div>
-                        <div className="col-md-4">
-                            <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src={Gowri} alt="Team Member"/>
-                                <h4>Gowri Shankar</h4>
-                                <p>Finance, CSEA</p>
-                            </div>
-                        </div>
+                        
                     </div>
                     </div>
                     <div className="col-md-2">
