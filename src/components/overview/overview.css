@@ -12,11 +12,16 @@
 }
 .overview-image{
     background-color: #000000;
-    background-image:url('server.jpg');
+    background-image:url('light.jpg');
+    background-blend-mode: luminosity;
     background-position: center;
     min-height: 100vh;
     background-size: cover;
     animation-duration: 0.8s;
+    transition: 1s ease;
+}
+.overview-image:hover{
+    background-blend-mode: normal;
 }
 .overview-item{
     padding: 50px 100px;

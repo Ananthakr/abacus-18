@@ -6,9 +6,8 @@ import './animate.css';
 import Async from 'react-code-splitting';
 import registerServiceWorker from './registerServiceWorker';
 import Item from './views/item';
-import OnlineEvents from './views/onlineEvents/index';
-import NightEvents from './views/nightEvents/index';
 //const Item = () => <Async load={import('./views/item')}/>
+
 //All components are async'ly loaded
 //import Home from './views/home';
 const Home = () => <Async load={import('./views/home')}/>
@@ -18,12 +17,18 @@ const Events = () => <Async load={import('./views/events')}/>
 const TechEvents = () => <Async load={import('./views/techEvents')}/>
 //import GeneralEvents from './views/generalEvents';
 const GeneralEvents = () => <Async load={import('./views/generalEvents')}/>
+//import OnlineEvents from './views/onlineEvents/index';
+const OnlineEvents = () => <Async load={import('./views/onlineEvents/index')}/>
+//import NightEvents from './views/nightEvents/index';
+const NightEvents = () => <Async load={import('./views/nightEvents/index')}/>
 //import Workshops from './views/workshops';
 const Workshops = () => <Async load={import('./views/workshops')}/>
 //import SA from './views/studentAmbassador';
 const SA = () => <Async load={import('./views/studentAmbassador')}/>
 //import Register from './views/register';
 const Register = () => <Async load={import('./views/register')}/>
+
+const NotFound = () => <Async load={import('./views/404/index')}/>
 
 
 ReactDOM.render(
@@ -40,6 +45,7 @@ ReactDOM.render(
             <Route exact path="/events/online" component={ OnlineEvents }/>
             <Route exact path="/events/night" component={ NightEvents }/>
             <Route path="/events/:name" component={ Item }/>
+            <Route component={NotFound}/>
         </Switch>
     </div>
 </Router>

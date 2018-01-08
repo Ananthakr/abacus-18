@@ -1,6 +1,8 @@
 import React,{Component} from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import './team.css';
+import Shanthi from '../../images/team/shanthi.jpg';
+import Raji from '../../images/team/raji.jpg';
 import Thillai from  '../../images/team/thillai.jpg';
 import Pradeeksha from  '../../images/team/pradeeksha.jpg';
 import Abishek from  '../../images/team/abishek.jpg';
@@ -32,14 +34,14 @@ export default class Team extends Component{
                     <div className="row">
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src={"https://via.placeholder.com/200x200"} alt="Team Member"/>
+                                <img src={Shanthi} alt="Team Member"/>
                                 <h4>Dr.A.P.Shanthi</h4>
                                 <p>President, CSEA</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                    <img src="https://via.placeholder.com/200x200" alt="Team Member"/>
+                                    <img src={Raji} alt="Team Member"/>
                                     <h4>Rajeshwari Sridar</h4>
                                     <p>Tresurer, CSEA</p>
                             </div>
