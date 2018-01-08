@@ -35,18 +35,18 @@ export default class Overview extends Component{
                         </div>
                         <div className="row">
                             <div className={(this.state.visible) ? "col-md overview-item animated fadeInUp": "col-md overview-item invisible"}>
-                                <p>10+ </p><span>events</span>
+                                <p>20+ </p><span>events</span>
                             </div>
                             <div className={(this.state.visible) ? "col-md overview-item animated fadeInUp": "col-md overview-item invisible"}>
-                                <p>5+ </p><span>Workshops</span>
+                                <p>4 </p><span>Workshops</span>
                             </div>
                         </div>
                         <div className="row">
                             <div className={(this.state.visible) ? "col-md overview-item animated fadeInUp": "col-md overview-item invisible"}>
-                                <p>60k+ </p><span>Prizes</span>
+                                <p>70k+ </p><span>Prizes</span>
                             </div>
                             <div className={(this.state.visible) ? "col-md overview-item animated fadeInUp": "col-md overview-item invisible"}>
-                                <p>2+ </p>  <span>Days</span>
+                                <p>3 </p>  <span>Days</span>
                             </div>
                         </div>
                         

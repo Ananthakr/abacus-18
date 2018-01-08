@@ -18,8 +18,11 @@ export default class Events extends Component{
                 </div>
                 <div className="container-fluid events-container">
                     <div className="row">
-                        <div className="col-sm"><Link to="/events/tech"> <GenericBox title="Tech" image={TechImage} imageTitle="TechIcon"/></Link></div>
-                        <div className="col-sm"><Link to="/events/general"> <GenericBox title="General" image={GenImage} imageTitle="GeneralIcon"/></Link></div>
+                        <div className="col-md"><Link to="/events/tech"> <GenericBox title="Tech" image={TechImage} imageTitle="TechIcon"/></Link></div>
+                        <div className="col-md"><Link to="/events/general"> <GenericBox title="General" image={GenImage} imageTitle="GeneralIcon"/></Link></div>
+                    
+                    <div className="col-md"><Link to="/events/online"> <GenericBox title="Online" image={GenImage} imageTitle="GeneralIcon"/></Link></div>
+                        <div className="col-md"><Link to="/events/night"> <GenericBox title="Night" image={GenImage} imageTitle="GeneralIcon"/></Link></div>
                     </div>
                 </div>
             </main>

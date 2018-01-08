@@ -19,7 +19,6 @@
     text-align: center;
 }
 .generic-box-container:hover{
-    box-shadow: 3px 3px 10px 2px #080808;
-    transform: translateY(-5px) translateX(2px);
-    transition: 0.3s 0s ease-in-out;
+    box-shadow: 4px 4px 10px 2px #444;
+    transition: 15s ease-in;
 }

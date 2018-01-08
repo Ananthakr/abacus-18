@@ -13,7 +13,7 @@ export default class Menu extends Component{
     toggle(e) {
         let chked = !this.state.checked;
         this.setState({ checked:chked });
-        console.log("menu: "+chked);
+        //console.log("menu: "+chked);
     }
 
     render(){

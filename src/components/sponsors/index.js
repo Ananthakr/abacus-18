@@ -1,6 +1,10 @@
 import React,{Component} from 'react';
 import VisibiitySensor from 'react-visibility-sensor';
 import './sponsors.css';
+import Freshworks from '../../images/sponsors/freshworks.png';
+import Gigamon from '../../images/sponsors/gigamon.png';
+import Motorq from '../../images/sponsors/motorq.png';
+import IVTL from '../../images/sponsors/ivtl.png';
 
 export default class Sponsors extends Component{
      
@@ -29,16 +33,16 @@ export default class Sponsors extends Component{
                     <VisibiitySensor scrollCheck={true} active={!this.state.visible} partialVisibility={true} onChange={this.onVisibilityChange}/>
                     <div className="row">
                         <div className={(this.state.visible)?"col-md-3 sponsors-item animated fadeInUp":"col-md-3 sponsors-item invisible"}>
-                            <img src="https://via.placeholder.com/200x200" alt="Sponsor"/>
+                            <img src={Motorq} alt="Sponsor"/>
                         </div>
                         <div className={(this.state.visible)?"col-md-3 sponsors-item animated fadeInUp":"col-md-3 sponsors-item invisible"}>
-                            <img src="https://via.placeholder.com/200x200" alt="Sponsor"/>
+                            <img src={IVTL} alt="Sponsor"/>
                         </div>
                         <div className={(this.state.visible)?"col-md-3 sponsors-item animated fadeInUp":"col-md-3 sponsors-item invisible"}>
-                            <img src="https://via.placeholder.com/200x200" alt="Sponsor"/>
+                            <img src={Gigamon} alt="Sponsor"/>
                         </div>
                         <div className={(this.state.visible)?"col-md-3 sponsors-item animated fadeInUp":"col-md-3 sponsors-item invisible"}>
-                            <img src="https://via.placeholder.com/200x200" alt="Sponsor"/>
+                            <img src={Freshworks} alt="Sponsor"/>
                         </div>
                     </div>
                 </div>

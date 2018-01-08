@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Source Sans Pro',sans-serif;
+  overflow-x:hidden; 
 }
 h1,h2,h2,h4{
   font-family: 'Barlow Semi Condensed',sans-serif;
@@ -33,6 +34,17 @@ section{
 }
 .invisible{
     visibility: hidden;
+}
+
+.back-btn{
+  margin:5px 5px 15px 5px; 
+  color: #C96813;
+  cursor: pointer;
+  display: inline;
+}
+.back-btn:hover{
+  text-decoration: underline;
+  color:#C96813;
 }
 
 @media(max-width:960px)and (orientation:portrait){

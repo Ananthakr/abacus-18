@@ -1,23 +1,9 @@
 import React,{Component} from 'react';
 import Menu from '../../components/menu'
 import './sa.css';
-/*import * as firebase from 'firebase';
-import firestore from 'firebase/firestore';
+import Firebase from '../../firebase.config';
 
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyC90aMVW0OGhUKFIjlA1VM2xMkPJvOp7SM",
-    authDomain: "abacus-18.firebaseapp.com",
-    databaseURL: "https://abacus-18.firebaseio.com",
-    projectId: "abacus-18",
-    storageBucket: "abacus-18.appspot.com",
-    messagingSenderId: "51357261044"
-};
-if (!firebase.apps.length) {
-    firebase.initializeApp(config);
-}
-var db=firebase.firestore();*/
-
+var db=Firebase.firestore();
 export default class SA extends Component{
     
     constructor(){
@@ -28,22 +14,38 @@ export default class SA extends Component{
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    //to clear form after submit
+    clearForm(){
+        this.setState({
+            firstName:"",lastName:"",address:"",city:"",phone:"",email:"",college:"",collegeLoc:"",dept:"",year:'1',gender:'Male',homeTown:"",gpa:"",whySA:"",extraCur:"",leadership:"",bestQs:"",loading:false,
+        });
+    }
+
+
+    uuidv4() {
+        return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+          (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+        )
+    }
+
     handleSubmit(e){
         e.preventDefault();
         //console.log("data : "+this.state.firstName+this.state.gender+this.state.email );
         this.setState({loading:true});
         if(this.state.firstName!==""&&this.state.city!==""&&this.state.phone!==""&&this.state.email!==""&&this.state.college!==""&&this.state.dept!==""&&this.state.whySA!==""&&this.state.bestQs!==""){
-            console.log("submitting");
+            //console.log("submitting");
             
-            /*db.collection("student-ambassador").add({
-            firstName:this.state.firstName,lastname:this.state.lastName,address:this.state.address,email:this.state.email,college:this.state.college,collegeLocation:this.state.collegeLoc,year:this.state.year,gender:this.state.gender,hometown:this.state.homeTown,gpa:this.state.gpa,whySA:this.state.whySA,extraCur:this.state.extraCur,leadership:this.state.leadership,bestQs:this.state.bestQs
-            }).then(function(docRef) {
-                console.log("Document written with ID: ", docRef.id);
+            db.collection("student-ambassador").doc(this.state.firstName+"-"+this.uuidv4().substr(0,7)).set({
+                firstName:this.state.firstName,lastname:this.state.lastName,address:this.state.address,email:this.state.email,college:this.state.college,collegeLocation:this.state.collegeLoc,year:this.state.year,gender:this.state.gender,hometown:this.state.homeTown,gpa:this.state.gpa,whySA:this.state.whySA,extraCur:this.state.extraCur,leadership:this.state.leadership,bestQs:this.state.bestQs
+            })
+            .then(function() {
+                //console.log("Document successfully written!");
             })
             .catch(function(error) {
-                console.error("Error adding document: ", error);
-            });*/
-
+                console.error("Error writing document: ", error);
+            });
+            
+            this.clearForm();
             this.setState({successVisible:true,alertVisible:false});
         }else{
             this.setState({alertVisible:true});

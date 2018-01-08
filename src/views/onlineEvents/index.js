@@ -1,16 +1,16 @@
 import React,{Component} from 'react';
 import { Link } from 'react-router-dom'
-import './generalevents.css';
+import './onlineevents.css';
 import Menu from '../../components/menu';
 import GenericBox from  '../../components/genericBox';
 import GenImage from '../../images/icons/circus.png';
-import data from './general.json';
+import data from './online.json';
 
 
-export default class GeneralEvents extends Component{
+export default class OnlineEvents extends Component{
 
-    constructor(props){
-        super(props);
+    constructor(){
+        super();
     }
 
     displayEvents(){
@@ -30,15 +30,14 @@ export default class GeneralEvents extends Component{
 
         return rows
     }
-      
-
+    
     render(){
         return(
             <main>
                 <div className="generic-view-container container-fluid">
                     <Menu/>
                     <div className="generic-view-title">
-                        <h1>General Events</h1>
+                        <h1>Online Events</h1>
                     </div>
                 </div>
                 <div className="container-fluid events-container">

@@ -1,13 +1,14 @@
+
 import React,{Component} from 'react';
 import { Link } from 'react-router-dom'
-import './generalevents.css';
+import './nightevents.css';
 import Menu from '../../components/menu';
 import GenericBox from  '../../components/genericBox';
 import GenImage from '../../images/icons/circus.png';
-import data from './general.json';
+import data from './night.json';
 
 
-export default class GeneralEvents extends Component{
+export default class NightEvents extends Component{
 
     constructor(props){
         super(props);
@@ -38,7 +39,7 @@ export default class GeneralEvents extends Component{
                 <div className="generic-view-container container-fluid">
                     <Menu/>
                     <div className="generic-view-title">
-                        <h1>General Events</h1>
+                        <h1>Night Events</h1>
                     </div>
                 </div>
                 <div className="container-fluid events-container">

@@ -6,6 +6,8 @@ import './animate.css';
 import Async from 'react-code-splitting';
 import registerServiceWorker from './registerServiceWorker';
 import Item from './views/item';
+import OnlineEvents from './views/onlineEvents/index';
+import NightEvents from './views/nightEvents/index';
 //const Item = () => <Async load={import('./views/item')}/>
 //All components are async'ly loaded
 //import Home from './views/home';
@@ -23,6 +25,7 @@ const SA = () => <Async load={import('./views/studentAmbassador')}/>
 //import Register from './views/register';
 const Register = () => <Async load={import('./views/register')}/>
 
+
 ReactDOM.render(
     <Router>
     <div>
@@ -34,6 +37,8 @@ ReactDOM.render(
             <Route path="/register" component={ Register }/>
             <Route exact path="/events/tech" component={ TechEvents }/>
             <Route exact path="/events/general" component={ GeneralEvents }/>
+            <Route exact path="/events/online" component={ OnlineEvents }/>
+            <Route exact path="/events/night" component={ NightEvents }/>
             <Route path="/events/:name" component={ Item }/>
         </Switch>
     </div>
