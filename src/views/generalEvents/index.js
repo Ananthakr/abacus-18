@@ -9,13 +9,13 @@ import data from './general.json';
 
 export default class GeneralEvents extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
     }
 
     displayEvents(){
         var rows = data.map((res,k) => {return(
-            <div key={k} className="col-sm-4">
+            <div key={k} className="col-md-4">
                 <Link to={{pathname: "/events/"+res.title,state: { info: res.content} }}><GenericBox title={res.title} image={GenImage} imageTitle="TechIcon"/></Link>
             </div>
         )}).reduce((r,e,i) => {
@@ -30,7 +30,8 @@ export default class GeneralEvents extends Component{
 
         return rows
     }
-    
+      
+
     render(){
         return(
             <main>
@@ -41,6 +42,7 @@ export default class GeneralEvents extends Component{
                     </div>
                 </div>
                 <div className="container-fluid events-container">
+                    <Link className="back-btn" to="/events">&larr;Back</Link>
                    {this.displayEvents()}
                 </div>
             </main>

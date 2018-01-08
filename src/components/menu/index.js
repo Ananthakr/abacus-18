@@ -1,11 +1,25 @@
 import React,{Component} from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import './menu.css';
 
 export default class Menu extends Component{
+    
+    constructor(){
+        super();
+        this.state = {checked:false};
+        this.toggle = this.toggle.bind(this);
+    }
+    
+    toggle(e) {
+        let chked = !this.state.checked;
+        this.setState({ checked:chked });
+        //console.log("menu: "+chked);
+    }
+
     render(){
         return(
             <label>
-                <input type='checkbox'/>
+                <input type='checkbox'  checked={this.state.checked} onClick={this.toggle} />
                 <span className='menu'>
                     <span className='hamburger'></span>
                 </span>
@@ -25,9 +39,9 @@ export default class Menu extends Component{
                     <li>
                         <Link to="/register">Register</Link>
                     </li>
-                    <li>
+                    {/*<li>
                         <Link to="/">Experiments</Link>
-                    </li>
+                    </li>*/}
                 </ul>
             </label>
         )

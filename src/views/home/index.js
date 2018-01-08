@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Async from 'react-code-splitting';
 import './home.css';
 import Menu from '../../components/menu';
+//firebase
+import Firebase from '../../firebase.config';
 //const Menu = () => <Async load={import('../../components/menu')}/>
 //import Overview from '../../components/overview';
 const Overview = () => <Async load={import('../../components/overview')}/>
@@ -15,6 +17,7 @@ const Sponsors = () => <Async load={import('../../components/sponsors')}/>
 const CallToAction = () => <Async load={import('../../components/callToAction')}/>
 //import Footer from '../../components/footer';
 const Footer = () => <Async load={import('../../components/footer')}/>
+
 
 export default class Home extends Component{
    constructor(){
@@ -36,10 +39,10 @@ export default class Home extends Component{
                     <div className="row home-row">
                         <div className="svg-icon d-flex justify-content-center align-items-center">
                             <div>    
-                                <span className="info-text animated fadeInLeft">&mdash; Abacus'18</span>
+                                <span className="info-text animated fadeInLeft">&mdash; Feb 27,28 Mar 1</span>
                                 <h1><span className="title-1 animated fadeIn">EAT. CODE. SLEEP.<br/></span>
                                 <span className="title-2 animated fadeIn">REPEAT.</span></h1>
-                                <p className="text animated fadeInUp">Welcome to National Level Symposium of<br/>Dept. of CSE, CEG</p>
+                                <p className="text animated fadeInUp">Welcome to Abacus ’18, the National Level Symposium of<br/>The Department of Computer Science and Engineering, CEG</p>
                             </div>
                         </div>
                     </div>

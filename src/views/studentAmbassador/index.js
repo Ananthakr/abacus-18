@@ -1,23 +1,9 @@
 import React,{Component} from 'react';
 import Menu from '../../components/menu'
 import './sa.css';
-/*import * as firebase from 'firebase';
-import firestore from 'firebase/firestore';
+import Firebase from '../../firebase.config';
 
-// Initialize Firebase
-var config = {
-    apiKey: "AIzaSyC90aMVW0OGhUKFIjlA1VM2xMkPJvOp7SM",
-    authDomain: "abacus-18.firebaseapp.com",
-    databaseURL: "https://abacus-18.firebaseio.com",
-    projectId: "abacus-18",
-    storageBucket: "abacus-18.appspot.com",
-    messagingSenderId: "51357261044"
-};
-if (!firebase.apps.length) {
-    firebase.initializeApp(config);
-}
-var db=firebase.firestore();*/
-
+var db=Firebase.firestore();
 export default class SA extends Component{
     
     constructor(){
@@ -28,22 +14,38 @@ export default class SA extends Component{
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    //to clear form after submit
+    clearForm(){
+        this.setState({
+            firstName:"",lastName:"",address:"",city:"",phone:"",email:"",college:"",collegeLoc:"",dept:"",year:'1',gender:'Male',homeTown:"",gpa:"",whySA:"",extraCur:"",leadership:"",bestQs:"",loading:false,
+        });
+    }
+
+
+    uuidv4() {
+        return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+          (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+        )
+    }
+
     handleSubmit(e){
         e.preventDefault();
         //console.log("data : "+this.state.firstName+this.state.gender+this.state.email );
         this.setState({loading:true});
         if(this.state.firstName!==""&&this.state.city!==""&&this.state.phone!==""&&this.state.email!==""&&this.state.college!==""&&this.state.dept!==""&&this.state.whySA!==""&&this.state.bestQs!==""){
-            console.log("submitting");
+            //console.log("submitting");
             
-            /*db.collection("student-ambassador").add({
-            firstName:this.state.firstName,lastname:this.state.lastName,address:this.state.address,email:this.state.email,college:this.state.college,collegeLocation:this.state.collegeLoc,year:this.state.year,gender:this.state.gender,hometown:this.state.homeTown,gpa:this.state.gpa,whySA:this.state.whySA,extraCur:this.state.extraCur,leadership:this.state.leadership,bestQs:this.state.bestQs
-            }).then(function(docRef) {
-                console.log("Document written with ID: ", docRef.id);
+            db.collection("student-ambassador").doc(this.state.firstName+"-"+this.uuidv4().substr(0,7)).set({
+                firstName:this.state.firstName,lastname:this.state.lastName,address:this.state.address,email:this.state.email,college:this.state.college,collegeLocation:this.state.collegeLoc,year:this.state.year,gender:this.state.gender,hometown:this.state.homeTown,gpa:this.state.gpa,whySA:this.state.whySA,extraCur:this.state.extraCur,leadership:this.state.leadership,bestQs:this.state.bestQs
+            })
+            .then(function() {
+                //console.log("Document successfully written!");
             })
             .catch(function(error) {
-                console.error("Error adding document: ", error);
-            });*/
-
+                console.error("Error writing document: ", error);
+            });
+            
+            this.clearForm();
             this.setState({successVisible:true,alertVisible:false});
         }else{
             this.setState({alertVisible:true});
@@ -138,15 +140,15 @@ export default class SA extends Component{
                         <textarea value={this.state.whySA} onChange={(e)=>this.setState({whySA:e.target.value})}id="why-sa" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label htmlFor="extra-curricular">Have you been a part of any volunteering/extra curricular activities..? If any mention. </label>
+                        <label htmlFor="extra-curricular">Have you been a part of any volunteering/extra-curricular activities? If any, please mention below. </label>
                         <textarea value={this.state.extraCur} onChange={(e)=>this.setState({extraCur:e.target.value})} id="extra-curricular" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label htmlFor="leadership-roles">Leadership roles if any? </label>
+                        <label htmlFor="leadership-roles">Leadership roles, if any?</label>
                         <textarea value={this.state.leadership} onChange={(e)=>this.setState({leadership:e.target.value})} id="leadership-roles" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
                     <div class="form-group">
-                        <label htmlFor="best-qualities">What are the best qualities you possess that can help you to be a Student Smbassador?*</label>
+                        <label htmlFor="best-qualities">What qualities do you possess that will make you a suitable Student Ambassador?*</label>
                         <textarea value={this.state.bestQs} onChange={(e)=>this.setState({bestQs:e.target.value})} id="best-qualities" class="form-control" rows="3" placeholder="Your Answer"></textarea>
                     </div>
 
@@ -178,11 +180,11 @@ export default class SA extends Component{
                         <div className="col-lg-8 col-md-10 criteria-holder">
                             <h5>Criteria</h5>
                             <div className="criteria-content">
-                                <p className="info-text">(Read Criteria before applying)</p>
+                                <p className="info-text">Interested in becoming a Student Ambassador for Abacus’18? Check out the criteria below.</p>
                                 <ul>
                                     <li>Must be an undergraduate with second year standing and above.</li>
                                     <li>Must maintain a satisfactory academic score.</li>
-                                    <li>Must be available to contact at any time.</li>
+                                    <li>Must be available to contact at any time</li>
                                     <li>Must make atleast 10 teams of students to join workshops & 15 persons to join the events.</li>
                                     <li>Represent him/her as a representative of their college.</li>
                                     <li>Must maintain a network of contacts of students in their college.</li>

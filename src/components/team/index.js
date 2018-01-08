@@ -1,6 +1,10 @@
 import React,{Component} from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import './team.css';
+import Thillai from  '../../images/team/thillai.jpg';
+import Pradeeksha from  '../../images/team/pradeeksha.jpg';
+import Abishek from  '../../images/team/abishek.jpg';
+import Gowri from  '../../images/team/gowri.png';
 
 export default class Team extends Component{
     
@@ -28,8 +32,8 @@ export default class Team extends Component{
                     <div className="row">
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src="https://via.placeholder.com/200x200" alt="Team Member"/>
-                                <h4>A.P.Shanthi</h4>
+                                <img src={"https://via.placeholder.com/200x200"} alt="Team Member"/>
+                                <h4>Dr.A.P.Shanthi</h4>
                                 <p>President, CSEA</p>
                             </div>
                         </div>
@@ -42,7 +46,7 @@ export default class Team extends Component{
                         </div>
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src="https://via.placeholder.com/200x200" alt="Team Member"/>
+                                <img src={Thillai} alt="Team Member"/>
                                 <h4>Muthu Thillai Natarajan</h4>
                                 <p>Chairman, CSEA</p>
                             </div>
@@ -51,22 +55,22 @@ export default class Team extends Component{
                     <div className="row">
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src="https://via.placeholder.com/200x200" alt="Team Member"/>
-                                <h4>Abishek.S.K</h4>
+                                    <img src={Pradeeksha} alt="Team Member"/>
+                                    <h4>Pradeeksha N.</h4>
+                                    <p>Vice Chairman, CSEA</p>
+                            </div>
+                        </div>
+                        <div className="col-md-4">
+                            <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
+                                <img src={Abishek} alt="Team Member"/>
+                                <h4>Abishek.N</h4>
                                 <p>Secretary, CSEA</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                    <img src="https://via.placeholder.com/200x200" alt="Team Member"/>
-                                    <h4>Prediksha</h4>
-                                    <p>Lady Chairman, CSEA</p>
-                            </div>
-                        </div>
-                        <div className="col-md-4">
-                            <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src="https://via.placeholder.com/200x200" alt="Team Member"/>
-                                <h4>Shruthi</h4>
+                                <img src={Gowri} alt="Team Member"/>
+                                <h4>Gowri Shankar</h4>
                                 <p>Finance, CSEA</p>
                             </div>
                         </div>

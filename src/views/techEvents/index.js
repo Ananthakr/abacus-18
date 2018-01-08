@@ -16,7 +16,7 @@ export default class TechEvents extends Component{
 
     displayEvents(){
         var rows = data.map((res,k) => {return(
-            <div key={k} className="col-sm-4">
+            <div key={k} className="col-md-4">
                 <Link to={{pathname: "/events/"+res.title,state: { info: res.content} }}><GenericBox title={res.title} image={TechImage} imageTitle="TechIcon"/></Link>
             </div>
         )}).reduce((r,e,i) => {
@@ -42,6 +42,7 @@ export default class TechEvents extends Component{
                     </div>
                 </div>
                 <div className="container-fluid events-container">
+                    <Link className="back-btn" to="/events">&larr;Back</Link>
                    {this.displayEvents()}
                 </div>
             </main>
