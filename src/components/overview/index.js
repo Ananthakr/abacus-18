@@ -27,7 +27,7 @@ export default class Overview extends Component{
                 <div className="row">
                     <div className="col-5 overview-image d-none d-lg-block d-xl-block"></div>
                     <VisibilitySensor scrollCheck={true} active={!this.state.visible} partialVisibility={true} onChange={this.onVisibilityChange} />
-                    <div className="col-7 overview-text-holder">
+                    <div className="col overview-text-holder">
                         <div className="row">
                             <div className={(this.state.visible) ? "col overview-title animated fadeIn" : "col overview-title invisible"}>
                                 <span className="dash"></span> abacus

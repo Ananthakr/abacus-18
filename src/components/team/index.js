@@ -54,7 +54,7 @@ export default class Team extends Component{
                             </div>
                         </div>
                     </div>
-                    <div className="row">
+                    <div className="row team-row">
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
                                     <img src={Pradeeksha} alt="Team Member"/>
