@@ -34,39 +34,34 @@ export default class Team extends Component{
                     <div className="row">
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src={Shanthi} alt="Team Member"/>
-                                <h4>Dr.A.P.Shanthi</h4>
-                                <p>President, CSEA</p>
+                                <h4>Events</h4>
+                                <p>Mahmood Sulthan -  8807777901<br/>Vishvesh thangamani - 9159693399</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                    <img src={Raji} alt="Team Member"/>
-                                    <h4>Rajeshwari Sridar</h4>
-                                    <p>Tresurer, CSEA</p>
+                                    <h4>Workshops</h4>
+                                    <p>Pragatheeswaran S - 8438367687<br/>  Prabhakaran S - 7200210789</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src={Thillai} alt="Team Member"/>
-                                <h4>Muthu Thillai Natarajan</h4>
-                                <p>Chairman, CSEA</p>
+                                <h4>Accommodation</h4>
+                                <p>Kapildev K - 9543042900 <br/> Rathish B - 9367145042</p>
                             </div>
                         </div>
                     </div>
                     <div className="row team-row">
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                    <img src={Pradeeksha} alt="Team Member"/>
-                                    <h4>Pradeeksha N.</h4>
-                                    <p>Vice Chairman, CSEA</p>
+                                    <h4>Registration Details</h4>
+                                    <p>Sachin Kumar S - 8939202465<br/>PrinceMelvin A - 8122492422</p>
                             </div>
                         </div>
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
-                                <img src={Abishek} alt="Team Member"/>
-                                <h4>Abishek.N</h4>
-                                <p>Secretary, CSEA</p>
+                                <h4>Industrial Relations</h4>
+                                <p>Abhishek Anand - 9445090727</p>
                             </div>
                         </div>
                         

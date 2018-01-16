@@ -22,3 +22,14 @@
     box-shadow: 4px 4px 10px 2px #444;
     transition: 15s ease-in;
 }
+@media(max-width:768px) and (orientation:portrait){
+    .generic-box-container{
+        padding-left:10px;
+        padding-right: 10px;
+        margin-left: 5px;
+        margin-right: 5px; 
+    }
+    .generic-box-container h6{
+        font-size: 1.45rem;
+    }
+}

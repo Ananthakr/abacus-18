@@ -41,7 +41,7 @@ export default class OnlineEvents extends Component{
                     </div>
                 </div>
                 <div className="container-fluid events-container">
-                    <Link className="back-btn" to="/events">&larr;Back</Link>
+                <span className="back-btn text-center" onClick={() => this.context.router.history.goBack()}>&larr;Back</span>
                    {this.displayEvents()}
                 </div>
             </main>

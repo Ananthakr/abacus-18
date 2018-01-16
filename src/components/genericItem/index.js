@@ -20,7 +20,7 @@ export default class GenericItem extends Component{
     render(){
         return(
             <div className="item-container container-fluid">
-             <Link className="back-btn text-center" to="/events">&larr;Back</Link>
+                <span className="back-btn text-center" onClick={() => this.context.router.history.goBack()}>&larr;Back</span>
                 <ul className="nav justify-content-center animated fadeIn">
                     <li className="nav-item">
                         <div className={(this.state.active===0)?"nav-link active":"nav-link"} onClick={()=> this.setState({active:0})}>Description</div>

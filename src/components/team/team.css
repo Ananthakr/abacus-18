@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 5px;
+    padding: 20px;
     animation-duration: 0.8s;
 }
 .col-md-4:nth-child(1) .team-item{
@@ -48,7 +48,7 @@
     width: 0;
     border-right: solid 3px #f57e16;
     position: relative;
-    left: 6%;
+    left: 16%;
     animation-delay: 0.1s;
     animation-duration: 0.5s;
 }

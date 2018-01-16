@@ -69,6 +69,9 @@ export default class Footer extends Component{
                             <p>All rights reserved.</p>
                         </div>
                         <div className="col">
+                            <a href="https://heapanalytics.com/?utm_source=badge" rel="nofollow"><img style="width:108px;height:41px;margin:-10px auto;display:block;" src="//heapanalytics.com/img/badgeLight.png" alt="Heap | Mobile and Web Analytics" /></a>
+                        </div>
+                        <div className="col">
                             <p> Developed with <span className="footer-love">React, Preact &amp; Bootstrap 4 </span></p>
                         </div>
                     </div>

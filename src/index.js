@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router,Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router,Route, Switch, history } from 'react-router-dom';
 import './index.css';
 import './animate.css';
 import Async from 'react-code-splitting';

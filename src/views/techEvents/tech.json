@@ -1,35 +1,29 @@
 [{
     "title":"OSPC",
-    "content":["Is your definition of fun going to HackerRank or SPOJ?<br/>Do you end your sentences with a semicolon instead of a period?<br/>Are you one of those people who get high when all your test cases pass?<br/><br/>To all those who believe in the motto ‘Talk is Cheap, Show me the Code, then OSPC awaits you.",
-    "Details will be announced soon! Stay Tuned!",
-    "Details will be announced soon! Stay Tuned!",
+    "content":["Is your definition of fun going to HackerRank or SPOJ?<br/>Do you end your sentences with a semicolon instead of a period?<br/>Are you one of those people who get high when all your test cases pass?<br/><br/>To all those who believe in the motto <i>‘Talk is Cheap, Show me the Code’</i>, then OSPC awaits you.",
+    "<b>Round 1</b> <ul><li>Pen and Paper</li><li>15 one mark questions</li><li>8 coding questions with varying marks based on difficulty (4 easy +4 hard)</li></ul><b>Round 2 </b> <ul><li>Lab Session</li><li>5 coding questions (1 easy + 2 medium + 2 hard)</li><li>Duration: 1.5 to 2 hours</li><li>Only 10 teams will be shortlisted</li></ul>",
+    "<ul><li>Maximum two per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed.</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>Details will be announced soon! Stay Tuned!",
     "Makisha - 96290 78175<br/>Harini - 94448 50785"]
 },{
     "title":"Game of Nerds",
     "content":[
         "<i>“When you play the game of thrones, you either win or die”<br/>-Cersei Lannister</i><p>Sharpen your minds and heighten your focus, it’s time for battle. Put all your experiences through the tumultuous journey that is college life to the test. Prepare yourself to face pass conquered enemies – Algorithms, Data Structures, Networks and the like. For only one can win the Game of Nerds and claim their place on the throne.</p> ",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+        "<b>Round 1:</b><ul><li>Multiple Choice Questions (30 Questions)</li><li>Duration: 30 mins</li></ul><b>Round 2:</b><ul><li>Questions will be based on Debugging, DBMS, OS and general coding.</li><li>Duration: 45 minutes</li><li>Only 7-10 teams will qualify to this round</li></ul>",
+        "<ul><li>Maximum two per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed.</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification.</li><li>Decisions taken by the organizer are final and binding.</li></ul>",
         "Agashya - 98659 17474<br/>Priyanka - 84288 19570"
     ]
 },{
-    "title":"OLPC",
-    "content":["Coders from all across the country, gather round. Abacus’ OLPC is not for the weak hearted. Face challenges where speed is of the essence and optimality is the key.<br/>Code, Compile, Debug, Repeat – OLPC is coming to a terminal near you.",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!"]
-},{
     "title":"Cyber Wars",
-    "content":["Sticks and Stones may break my bones, but ciphers and cryptograms excite me.<br/>If your devious litte mind deviates toward any and all things cryptographic, then this event is precisely for you. Put your mind to the test and uncover the deepest secrets in the realm of cryptic codes. Encrypt, Decrypt and repeat to your heart’s content in Abacus’ Cyberwars!",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+    "content":["<i>'Sticks and Stones may break my bones, but ciphers and cryptograms excite me.'</i><br/>If your devious litte mind deviates toward any and all things cryptographic, then this event is precisely for you. Put your mind to the test and uncover the deepest secrets in the realm of cryptic codes. Encrypt, Decrypt and repeat to your heart’s content in Abacus’ Cyberwars!",
+        "<p><strong>Round 1</strong> &ndash; Pen and Paper</p><p>30 one mark questions + four tie breaker questions</p><p>Duration - 40mins</p><p><strong>Round 2</strong> &ndash; Lab Session</p><p>Questions based on Message Passing and socket programming that include cryptographic techniques</p><p>Duration &ndash; 45 mins to 1 hour</p><p>Only 8 teams will be shortlisted to Round 2</p>",
+        "<ul><li>Maximum 2 per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification.</li><li>Decisions taken by the organizer are final and binding.<u></u></li></ul>",
         "Ajay - 88833 39409<br/>Nambi Kannan - 85267 57626"   
     ]
 },{
     "title":"Debugging",
     "content":["‘When debugging, novices insert corrective code; experts remove defective code’<br>Are you the resident bug remover of your class? Does removing that one error among thousands of lines of code give you an adrenaline rush? Put your skills to the test with Abacus’ debugging contest - may the best exterminator win.",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+        "<p><strong>Round 1</strong>&nbsp;</p><p>Pen and Paper</p><p>15 one mark questions</p><p>3 pseudo code based questions with varying marks based on difficulty</p><p><strong>Round 2</strong>&nbsp;</p><p>Lab Session</p><p>3 coding questions (1 debugging +1 reverse coding + 1 obfuscated code (write code and crack other teams&rsquo; code))</p><p>Duration &ndash; 65 minutes (15mins + 20 mins + 30mins (10 mins to code + 20 mins to crack other's code))</p><p>Only 6 teams will be shortlisted to Round 2</p>",
+        "<ul><li>Maximum 2 per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Dinesh - 90945 13434"]
 },
 {
@@ -40,44 +34,53 @@
         "Dinesh - 90945 13434"]
 },{
     "title":"Alohomora",
-    "content":["If databases, deadlocks and queries are just a game then alohomora will be your climb to fame. <br/>Use your spells to conjure the key,<br/>Resolve those pesky deadlocks glee,</br>Make the database dance to your tune<br/>and victory will come to you as a boon.",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+    "content":["If databases, deadlocks and queries are just a game<br/> then alohomora will be your climb to fame. <br/>Use your spells to conjure the key,<br/>Resolve those pesky deadlocks glee,</br>Make the database dance to your tune<br/>and victory will come to you as a boon.",
+        "<b>Round 1</b><ul><li>Prelims: (Pen and Paper Round)</li><li>25 Questions + 3 tie breaker questions</li><li>Questions will be of three types - MCQs, single word answers, or short answers.</li><li>Duration: 45 minutes</li></ul><br/><b>Round 2 </b> <ul><li>Finals: (Lab Session)</li><li>There will be 6 different databases consisting of 15 questions each</li><li>Time limit: 1 hour</li><li>6 teams will be selected for the final round.</li></ul>",
+        "<ul><li>Extra 15 mins will be given for database creation and insertion.</li><li>Maximum two per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Shruthi - 99442 63196"]
 },{
     "title":"Webaholic",
-    "content":["What’s the world without websites? <br/>Sculpt your site with HTML and Javascirpt and add the final flourish with CSS. Wow the crowd with your eye catching site and prove yourself to be the web design wizard you are.",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+    "content":["What’s the world without websites? <br/>Sculpt your site with HTML and JavaScript and add the final flourish with CSS. Wow the crowd with your eye catching site and prove yourself to be the web design wizard you are.",
+        "<p><strong>Round 1&nbsp;</strong></p><p>25 question- 15 one mark questions + 10 coding questions with varying marks and difficulty.</p><p><strong>Round 2&nbsp;</strong></p><p>7 coding questions (2 easy + 3 medium + 2 hard)</p><p>Duration &ndash; 2 to 2.5 hours based on schedule</p><p>Only 5 teams will be shortlisted for Round 2.</p>",
+        "<ul><li>Maximum 2 per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Sakthi Prasad - 81100 10630<br/>Santha Kumar - 96005 38775"]
 },{
     "title":"3 MUSKETEERS",
     "content":["Athos. Porthos. Aramis.<br/>Gather your comrades in arms, as you face the challenges that lie ahead. Pace yourselves in this relay race against time, as we put your teamwork to the test!",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+        "<p><strong>Round 1</strong></p><p>Pen and Paper</p><p>All questions must be solved by providing 3 different approaches</p><p>Duration: 45 minutes</p><p><strong>Round 2</strong></p><p>Lab Session</p><p>Number of questions: 3</p><p>Duration: 1 hour</p><p>For the first 20 minutes, each member will start solving one question.</p><p>After the first 20 minutes, the questions will be swapped among the members and each should continue with their newly assigned code.</p><p>The same will be followed for the next 20 minutes.</p><p>&nbsp;</p><p>Only 5 to 6 teams will be shortlisted for Round 2.</p>",
+        "<ul><li>Only teams of 3 are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Gayathri - 80560 78716<br/>Priyavarshini - 98946 42863"]
 },{
     "title":"Flash",
     "content":["Get ready for a feast for the eyes as we watch your fingers dance across the keys. As the seconds pass, wrack your brain to solve these deceptively difficult problems. Be the first to crack the code and beat the clock! ",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+        "<p><strong>ROUND 1: </strong></p><p>Pen and Paper</p><p>Question Type: Objective questions (30)</p><p>Time: 30 mins</p><p>Questions on various topics. Higher priority will be given for networks questions. Domains: Networks, C and C++ (Pointers, Arrays, Linked List, Tree, Graph, Functions and Control Structures)</p><p>&nbsp;</p><p><strong>ROUND 2: </strong></p><p>Competitive Coding</p><p>Question Type: Problem Solving (1 &ndash; based on Networks) + 2 Competitive Coding</p><p>Participants must crack the first network question to proceed to the next questions.</p><p>One participant from each team can start coding. If help is required, team mates may assist. However, marks are awarded according to the time at which they join the first participant.</p><p>&nbsp;</p><p><strong>ROUND 3:</strong></p><p>Time will be given according to the complexity of the questions.</p><p>Question Type: Time Constraint Questions (25)</p><p>Domains: Networks, Algorithms, TOC, OS, CA, DBMS, C programming</p>",
+        "<ul><li>Teams of 3 only.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Arul Roja - 97886 41525"]
 },{
     "title":"Code Hunt",
     "content":["Treasure Hunting 101: X marks the spot.<br/>Code Hunting 101 : Obfuscated code marks the spot.<br/>Follow the trail and compile the clues as you trudge through the trails of Abacus’ Code Hunt. Beware of the dangers that lie in your wake – Polymorphism, Abstraction and Recursion are not to be trifled with. Brave the storm and find riches galore as you capture the clue obscured by our code!",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+        "<p><strong>Round 1</strong></p><p>No of questions: 5</p><p>Duration: 2-3 hours</p><p>Each of the 5 questions is a programming question. The correct solution to each question will lead to the next location of the clue and finally, the final treasure.</p>",
+        "<ul><li>Only 3 per team.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li><li>Participants are requested to bring their own laptops for the event.</li></ul>",
         "Vishvesh Thangamani - 91596 93399 <br/>Aravindh - 99412 36630"]
 },{
     "title":"Hello World",
     "content":["If(Student.year&equals;&equals;1){<br/>Cout&lt;&lt;”Then this event is for you!”;<br/>}<br/>Calling all first years! Hello World is your first step into the world of Tech.Come join in to find out what Abacus has in store for you. </br>Hint : Loads of fun, frolic and amazing prizes.",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
+        "<b>Round 1 </b><ul><li> Pen and Paper</li><li>50 one mark questions with varying difficulty</li></ul><b>Round 2</b> <ul><li> Lab Session</li><li>5 coding questions (2 easy + 2 medium + 1 hard)</li><li>Duration-1.5 to 2 hours based on schedule</li><li>Only 10 teams will be shortlisted to Round 2.</li></ul>",
+        "<ul><li>Only first years are allowed.</li><li>Only Teams of 2 or 3 are allowed</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Arun - 80123 64643<br/>Thirunavukarasu - 94867 52704"]
 },{
-    "title":"Photoshop Event",
+    "title":"Design Demigod",
     "content":["If ‘PS I love you’ your favorite movie for more reasons than one and your friends tease you for being an artist online and a klutz in real life, then Design Demigods is for you. Show off your style and flaunt your finesse – prove that it’s time to graduate and gain the title of Design God.",
         "Details will be announced soon! Stay Tuned!",
         "Details will be announced soon! Stay Tuned!",
         "Prabhu Dass - 96264 41750<br/>Senthil Raja - 94420 23026"]
-}]
+},{
+    "title":"Code Gambling",
+    "content":[
+        "Code Gambling tests your programming skills",
+        "<p><strong>ROUND 1:</strong></p><p>Pen and Paper</p><p>Number of Questions: 30</p><p>&nbsp;</p><p>Each of the computing resources used for programming will be limited. The questions are based on memory space, execution time, operation cost, identifying test cases in the programs, use of restricted keywords and operations.</p><p>Each above mentioned category contains 5-6 questions.</p><p>&nbsp;</p><p><strong>ROUND 2:</strong></p><p>Lab Session</p><p>Competitive Coding</p><p>Number of Questions: 10</p><p>Duration: 1.5 hours</p><p>&nbsp;</p><p>Resource Auction</p><p>Number of Questions: 10</p><p>The teams have to undergo virtual auction to do programming.</p><p>The points will be allocated based a coding based game.</p><p>Points won will have to be used to buy items like Data Structures and Algorithm paradigms which are needed to solve questions.</p>",
+        "<ul><li>Maximum 2 per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
+        ""
+    ]
+}
+]
