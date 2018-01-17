@@ -61,27 +61,9 @@ export default class SA extends Component{
                 <div className="row"><div className="back-btn" onClick={()=>{this.setState({formVisible:false})}}>&larr; Read the criteria</div></div>
                 <form id="abacus_ambassador">
                     <div className="row">
-                        <div class="form-group col-sm-6">
-                            <label htmlFor="first-name">First Name*</label>
-                            <input required value={this.state.firstName} name="first_name" onChange={(e)=>this.setState({firstName:e.target.value})} id="first-name" type="text" class="form-control" placeholder="First Name"/>
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label htmlFor="last-name">Last Name</label>
-                            <input value={this.state.lastName} name="last_name" onChange={(e)=>this.setState({lastName:e.target.value})} id="last-name" type="text" class="form-control" placeholder="Last Name"/>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label htmlFor="address">Address</label>
-                        <textarea value={this.state.address} name="address" onChange={(e)=>this.setState({address:e.target.value})} id="address" class="form-control" rows="2" placeholder="Your Street and Area"></textarea>
-                    </div>
-                    <div className="row">
-                            <div class="form-group col-sm-6">
-                            <label htmlFor="city">City*</label>
-                            <input required value={this.state.city} name="city" onChange={(e)=>this.setState({city:e.target.value})} id="city" type="text" class="form-control" placeholder="Your City"/>
-                        </div>
-                        <div class="form-group col-sm-6">
-                            <label htmlFor="phone-no">Phone number*</label>
-                            <input required value={this.state.phone} name="phone_number" onChange={(e)=>this.setState({phone:e.target.value})} id="phone-no" type="text" class="form-control" placeholder="(+91)"/>
+                        <div class="form-group col-sm-12">
+                            <label htmlFor="first-name">Name*</label>
+                            <input required value={this.state.firstName} name="first_name" onChange={(e)=>this.setState({firstName:e.target.value})} id="first-name" type="text" class="form-control" placeholder="Name"/>
                         </div>
                     </div>
                     <div class="form-group">
@@ -89,13 +71,13 @@ export default class SA extends Component{
                         <input required value={this.state.email} name="email" onChange={(e)=>this.setState({email:e.target.value})} id="email-address" type="email" class="form-control" placeholder="name@mail.com"/>
                     </div>
                     <div className="row">
-                        <div class="form-group col-sm-8">
+                        <div class="form-group col-sm-6">
+                            <label htmlFor="phone-no">Phone number*</label>
+                            <input required value={this.state.phone} name="phone_number" onChange={(e)=>this.setState({phone:e.target.value})} id="phone-no" type="text" class="form-control" placeholder="(+91)"/>
+                        </div>
+                        <div class="form-group col-sm-6">
                             <label htmlFor="college">College/University*</label>
                             <input required value={this.state.college} name="college" onChange={(e)=>this.setState({college:e.target.value})} id="college" type="text" class="form-control" placeholder="Your College/Univerisity"/>
-                        </div>
-                        <div class="form-group col-sm-4">
-                            <label htmlFor="college-location">College/Univerisity Location</label>
-                            <input  value={this.state.collegeLoc} name="college_location" onChange={(e)=>this.setState({collegeLoc:e.target.value})} id="college-location" type="text" class="form-control" placeholder="Your College/Univeristy's Location"/>
                         </div>
                     </div>
                     <div className="row">
@@ -125,13 +107,9 @@ export default class SA extends Component{
                             </select>
                         </div>
                         <div class="form-group col-sm-6">
-                            <label htmlFor="hometown">Hometown</label>
-                            <input value={this.state.homeTown} name="hometown" onChange={(e)=>this.setState({homeTown:e.target.value})} id="hometown" type="text" class="form-control" placeholder="Your Hometown"/>
+                        <label htmlFor="gpa">GPA</label>
+                        <input value={this.state.gpa} name="gpa" onChange={(e)=>this.setState({gpa:e.target.value})} id="gpa" type="text" class="form-control" placeholder="Your GPA"/>
                         </div>
-                    </div>
-                    <div class="form-group">
-                            <label htmlFor="gpa">GPA</label>
-                            <input value={this.state.gpa} name="gpa" onChange={(e)=>this.setState({gpa:e.target.value})} id="gpa" type="text" class="form-control" placeholder="Your GPA"/>
                     </div>
                     <div class="form-group">
                         <label htmlFor="why-sa">Why do you want to be a Student Ambassador?*</label>

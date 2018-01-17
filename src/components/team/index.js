@@ -1,12 +1,6 @@
 import React,{Component} from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import './team.css';
-import Shanthi from '../../images/team/shanthi.jpg';
-import Raji from '../../images/team/raji.jpg';
-import Thillai from  '../../images/team/thillai.jpg';
-import Pradeeksha from  '../../images/team/pradeeksha.jpg';
-import Abishek from  '../../images/team/abishek.jpg';
-import Gowri from  '../../images/team/gowri.png';
 
 export default class Team extends Component{
     

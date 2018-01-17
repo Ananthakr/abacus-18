@@ -63,41 +63,25 @@ export default class Register extends Component{
                 <div className="row"><div className="reg-frwd-btn"><Link to="/sa">Interested in being a Student Ambassador? &rarr;</Link></div></div>
                     <form id="abacus_register">
                         <div className="row">
-                            <div className="form-group col-sm-6">
-                                <label htmlFor="first-name">First Name*</label>
-                                <input value={this.state.firstName} name="first_name" onChange={(e)=>this.setState({firstName:e.target.value})} id="first-name" type="text"  className="form-control" placeholder="First Name" required/>
+                            <div className="form-group col-sm-12">
+                                <label htmlFor="first-name">Name*</label>
+                                <input value={this.state.firstName} name="first_name" onChange={(e)=>this.setState({firstName:e.target.value})} id="first-name" type="text"  className="form-control" placeholder="Name" required/>
                             </div>
-                            <div className="form-group col-sm-6">
-                                <label htmlFor="last-name">Last Name</label>
-                                <input value={this.state.lastName} name="last_name" onChange={(e)=>this.setState({lastName:e.target.value})} id="last-name" type="text" className="form-control" placeholder="Last Name"/>
-                            </div>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="address">Address</label>
-                            <textarea value={this.state.address} name="address" onChange={(e)=>this.setState({address:e.target.value})} id="address" className="form-control" rows="2" placeholder="Your Street and Area"></textarea>
                         </div>
                         <div className="row">
-                                <div className="form-group col-sm-6">
-                                <label htmlFor="city">City*</label>
-                                <input value={this.state.city} name="city" onChange={(e)=>this.setState({city:e.target.value})} id="city" type="text" className="form-control" placeholder="Your City" required/>
+                            <div className="form-group col-sm-12">
+                                <label htmlFor="email-address">Email address*</label>
+                                <input value={this.state.email} name="email" onChange={(e)=>this.setState({email:e.target.value})} id="email-address" type="email" className="form-control" placeholder="name@mail.com" required/>
                             </div>
+                        </div>
+                        <div className="row">
                             <div className="form-group col-sm-6">
                                 <label htmlFor="phone-no">Phone number*</label>
-                                <input value={this.state.phone} name="phone_number" onChange={(e)=>this.setState({phone:e.target.value})} id="phone-no" type="text" className="form-control" placeholder="(+91)" required/>
+                                <input value={this.state.phone} name="phone_number" onChange={(e)=>this.setState({phone:e.target.value})} id="phone-no" type="text" className="form-control" placeholder="(+91)"/>
                             </div>
-                        </div>
-                        <div className="form-group">
-                            <label htmlFor="email-address">Email address*</label>
-                            <input value={this.state.email} name="email" onChange={(e)=>this.setState({email:e.target.value})} id="email-address" type="email" className="form-control" placeholder="name@mail.com" required/>
-                        </div>
-                        <div className="row">
-                            <div className="form-group col-sm-8">
+                            <div className="form-group col-sm-6">
                                 <label htmlFor="college">College/Univer sity*</label>
                                 <input value={this.state.college} name="college" onChange={(e)=>this.setState({college:e.target.value})} id="college" type="text" className="form-control" placeholder="Your College/Univerisity" required/>
-                            </div>
-                            <div className="form-group col-sm-4">
-                                <label htmlFor="college-location">College/Univerisity Location</label>
-                                <input value={this.state.collegeLoc} name="college_location" onChange={(e)=>this.setState({collegeLoc:e.target.value})} id="college-location" type="text" className="form-control" placeholder="Your College/Univeristy's Location"/>
                             </div>
                         </div>
                         <div className="row">
@@ -114,21 +98,6 @@ export default class Register extends Component{
                                 <option>4</option>
                                 <option>5</option>
                                 </select>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="form-group col-sm-6">
-                                <label htmlFor="gender">Gender</label>
-                                <select value={this.state.gender} name="gender" onChange={(e)=>this.setState({gender:e.target.value})} className="form-control" >
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Other</option>
-                                    <option>Prefer not to say</option>
-                                </select>
-                            </div>
-                            <div className="form-group col-sm-6">
-                                <label htmlFor="hometown">Hometown</label>
-                                <input value={this.state.homeTown} name="hometown" onChange={(e)=>this.setState({homeTown:e.target.value})} id="hometown" type="text" className="form-control" placeholder="Your Hometown"/>
                             </div>
                         </div>
                         { (this.state.alertVisible) ?
