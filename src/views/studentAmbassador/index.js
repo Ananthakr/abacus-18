@@ -1,11 +1,9 @@
 import React,{Component} from 'react';
 import Menu from '../../components/menu'
 import './sa.css';
-//import Firebase from '../../firebase.config';
 import form_init from '../../utils/form_init';
 import Fingerprint from 'fingerprintjs2';
 
-//var db=Firebase.firestore();
 export default class SA extends Component{
     
     constructor(){

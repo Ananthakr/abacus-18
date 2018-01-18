@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import Async from 'react-code-splitting';
 import './home.css';
 import Menu from '../../components/menu';
-//firebase
-import Firebase from '../../firebase.config';
+
 //const Menu = () => <Async load={import('../../components/menu')}/>
 //import Overview from '../../components/overview';
 const Overview = () => <Async load={import('../../components/overview')}/>
