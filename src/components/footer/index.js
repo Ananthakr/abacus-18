@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import './footer.css';
 import Mail from '../../images/envelope.png';
-import Phone from '../../images/phone-call.png';
+import Whatsapp from '../../images/whatsapp.png';
 import Location from '../../images/placeholder.png';
 import Facebook from '../../images/facebook.svg';
 import Twitter from '../../images/twitter.svg';
@@ -48,9 +48,9 @@ export default class Footer extends Component{
                         </div>
                         <div className={(this.state.visible)?"col-sm-4 footer-block animated zoomIn":"invisible col-sm-4 footer-block"}>
                             <div className="media">
-                                <img className="align-self-center mr-3 footer-icon" src={Phone} alt="Phone Icon"/>
+                                <img className="align-self-center mr-3 footer-icon" src={Whatsapp} alt="Whatsapp Icon"/>
                                 <div className="media-body align-self-center footer-text">
-                                    <a className="link-text" href="tel:+919655883077">+91 96558 83077</a>
+                                    <a className="link-text" href="tel:+919629279137">+91 96292 79137</a>
                                 </div>
                             </div>
                         </div>

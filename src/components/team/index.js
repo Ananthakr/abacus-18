@@ -26,6 +26,12 @@ export default class Team extends Component{
                     <div className="col-md-10">
                     <VisibilitySensor scrollCheck={true} active={!this.state.visible} partialVisibility={true} onChange={this.onVisibilityChange}/>
                     <div className="row">
+                    <div className="col-md-4">
+                        <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
+                                <h4>Chairman</h4>
+                                <p>Muthu Thillai Natarajan - 9655883077</p>
+                            </div>
+                        </div>
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
                                 <h4>Events</h4>
@@ -38,14 +44,15 @@ export default class Team extends Component{
                                     <p>Pragatheeswaran S - 8438367687<br/>  Prabhakaran S - 7200210789</p>
                             </div>
                         </div>
+                        
+                    </div>
+                    <div className="row team-row">
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
                                 <h4>Accommodation</h4>
                                 <p>Kapildev K - 9543042900 <br/> Rathish B - 9367145042</p>
                             </div>
                         </div>
-                    </div>
-                    <div className="row team-row">
                         <div className="col-md-4">
                             <div className={(this.state.visible)?"team-item animated fadeInUp":"team-item invisible"}>
                                     <h4>Registration Details</h4>
