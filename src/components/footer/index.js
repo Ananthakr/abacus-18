@@ -50,7 +50,7 @@ export default class Footer extends Component{
                             <div className="media">
                                 <img className="align-self-center mr-3 footer-icon" src={Whatsapp} alt="Whatsapp Icon"/>
                                 <div className="media-body align-self-center footer-text">
-                                    <a className="link-text" href="tel:+919629279137">+91 96292 79137</a>
+                                    <a className="link-text" href="https://api.whatsapp.com/send?phone=919629279137">+91 96292 79137</a>
                                 </div>
                             </div>
                         </div>

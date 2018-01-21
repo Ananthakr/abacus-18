@@ -7,7 +7,11 @@ body {
 h1,h2,h2,h4{
   font-family: 'Barlow Semi Condensed',sans-serif;
 }
+a{
+  color: #FFFFFF;
+}
 a:hover{
+  color: #C96813;
   text-decoration: none;
 }
 section{
