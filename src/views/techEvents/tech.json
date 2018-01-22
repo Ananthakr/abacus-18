@@ -25,13 +25,6 @@
         "<p><strong>Round 1</strong>&nbsp;</p><p>Pen and Paper</p><p>15 one mark questions</p><p>3 pseudo code based questions with varying marks based on difficulty</p><p><strong>Round 2</strong>&nbsp;</p><p>Lab Session</p><p>3 coding questions (1 debugging +1 reverse coding + 1 obfuscated code (write code and crack other teams&rsquo; code))</p><p>Duration &ndash; 65 minutes (15mins + 20 mins + 30mins (10 mins to code + 20 mins to crack other's code))</p><p>Only 6 teams will be shortlisted to Round 2</p>",
         "<ul><li>Maximum 2 per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Dinesh - 90945 13434"]
-},
-{
-    "title":"Output the Input",
-    "content":["What came first, the chicken or the egg? More importantly, what came first, the output or the logic?<br/>If you’re a believer that the output leads to the logic, then put your faith to the test with Output the Input. Crack the logic behind the bare input and find the pattern in the seemingly abstract output.",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
-        "Dinesh - 90945 13434"]
 },{
     "title":"Alohomora",
     "content":["If databases, deadlocks and queries are just a game<br/> then alohomora will be your climb to fame. <br/>Use your spells to conjure the key,<br/>Resolve those pesky deadlocks glee,</br>Make the database dance to your tune<br/>and victory will come to you as a boon.",
@@ -45,7 +38,7 @@
         "<ul><li>Maximum 2 per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Sakthi Prasad - 81100 10630<br/>Santha Kumar - 96005 38775"]
 },{
-    "title":"3 MUSKETEERS",
+    "title":"3 Musketeers",
     "content":["Athos. Porthos. Aramis.<br/>Gather your comrades in arms, as you face the challenges that lie ahead. Pace yourselves in this relay race against time, as we put your teamwork to the test!",
         "<p><strong>Round 1</strong></p><p>Pen and Paper</p><p>All questions must be solved by providing 3 different approaches</p><p>Duration: 45 minutes</p><p><strong>Round 2</strong></p><p>Lab Session</p><p>Number of questions: 3</p><p>Duration: 1 hour</p><p>For the first 20 minutes, each member will start solving one question.</p><p>After the first 20 minutes, the questions will be swapped among the members and each should continue with their newly assigned code.</p><p>The same will be followed for the next 20 minutes.</p><p>&nbsp;</p><p>Only 5 to 6 teams will be shortlisted for Round 2.</p>",
         "<ul><li>Only teams of 3 are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
@@ -69,18 +62,12 @@
         "<ul><li>Only first years are allowed.</li><li>Only Teams of 2 or 3 are allowed</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
         "Arun - 80123 64643<br/>Thirunavukarasu - 94867 52704"]
 },{
-    "title":"Design Demigod",
-    "content":["If ‘PS I love you’ your favorite movie for more reasons than one and your friends tease you for being an artist online and a klutz in real life, then Design Demigods is for you. Show off your style and flaunt your finesse – prove that it’s time to graduate and gain the title of Design God.",
-        "Details will be announced soon! Stay Tuned!",
-        "Details will be announced soon! Stay Tuned!",
-        "Prabhu Dass - 96264 41750<br/>Senthil Raja - 94420 23026"]
-},{
-    "title":"Code Gambling",
+    "title":"Code Man",
     "content":[
-        "Code Gambling tests your programming skills",
+        "<p>If black jack and poker have become too main stream for you, brace yourselves for code gambling. Show us your hand and code under constraints. Prove that you’re the best at striking a deal in this cybernetic gambling game.</p>",
         "<p><strong>ROUND 1:</strong></p><p>Pen and Paper</p><p>Number of Questions: 30</p><p>&nbsp;</p><p>Each of the computing resources used for programming will be limited. The questions are based on memory space, execution time, operation cost, identifying test cases in the programs, use of restricted keywords and operations.</p><p>Each above mentioned category contains 5-6 questions.</p><p>&nbsp;</p><p><strong>ROUND 2:</strong></p><p>Lab Session</p><p>Competitive Coding</p><p>Number of Questions: 10</p><p>Duration: 1.5 hours</p><p>&nbsp;</p><p>Resource Auction</p><p>Number of Questions: 10</p><p>The teams have to undergo virtual auction to do programming.</p><p>The points will be allocated based a coding based game.</p><p>Points won will have to be used to buy items like Data Structures and Algorithm paradigms which are needed to solve questions.</p>",
         "<ul><li>Maximum 2 per team. Lone wolves are allowed.</li><li>Teams consisting of participants from different colleges is allowed</li><li>Use of the internet is not allowed.</li><li>Any form of malpractice will lead to immediate disqualification</li><li>Decisions taken by the organizer are final and binding</li></ul>",
-        ""
+        "Akilan - +91 9597349710"
     ]
 }
 ]
