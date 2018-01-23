@@ -4,6 +4,7 @@ export default function form_init(form_uname_array_obj, Fingerprint,component) {
         var form_el = document.getElementById(form_uname)
         return form_el.addEventListener('submit', function(event) {
             event.preventDefault()
+            component.setState({loading:true});
             var form = document.getElementById(form_uname)
             var inputElems = []
             var inputElemsRaw = getFormInputElems(form)
@@ -42,7 +43,7 @@ export default function form_init(form_uname_array_obj, Fingerprint,component) {
                 "version": "1.0",
                 "fingerprint": uid
             }
-            component.setState({loading:true});
+            
             var ajax = new XMLHttpRequest()
             ajax.open("POST", "https://dash.cyces.co/form_cap/save")
             ajax.setRequestHeader("Content-Type", "application/json")
