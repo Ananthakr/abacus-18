@@ -54,6 +54,7 @@ export default class Register extends Component{
                 <Menu/>
                 <div className="generic-view-title">
                     <h1>Register</h1>
+                    <p>(For workshops registration visit <Link to="/workshops">here</Link>)</p>
                 </div>
             </div>
             
