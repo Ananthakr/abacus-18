@@ -31,7 +31,7 @@ export default class Menu extends Component{
                         <Link to="/events">Events</Link>
                     </li>
                     <li>
-                        <Link to="/workshops">Workshops</Link>
+                        <Link to="/workshops">Workshops Registration</Link>
                     </li>
                     <li>
                         <Link to="/sa">Student Ambassador</Link>

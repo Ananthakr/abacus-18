@@ -94,7 +94,7 @@ export default class SA extends Component{
                             </select>
                          </div>
                     </div>
-                    <div className="row">
+                    {/*<div className="row">
                         <div class="form-group col-sm-6">
                             <label htmlFor="gender">Gender</label>
                             <select value={this.state.gender} name="gender" onChange={(e)=>this.setState({gender:e.target.value})} class="form-control" id="gender">
@@ -124,7 +124,7 @@ export default class SA extends Component{
                     <div class="form-group">
                         <label htmlFor="best-qualities">What qualities do you possess that will make you a suitable Student Ambassador?*</label>
                         <textarea required value={this.state.bestQs} names="qualities" onChange={(e)=>this.setState({bestQs:e.target.value})} id="best-qualities" class="form-control" rows="3" placeholder="Your Answer"></textarea>
-                    </div>
+            </div>*/}
 
                     { (this.state.alertVisible) ?
                             <div class="alert alert-warning alert-dismissible fade show">
