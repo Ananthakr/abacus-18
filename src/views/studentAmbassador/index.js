@@ -145,7 +145,7 @@ export default class SA extends Component{
                         : ""
                     }
 
-                    <button type="submit" class="btn btn-primary">{(this.state.loading)?<span>&nbsp;&nbsp;<div className="spinner"/></span>:"Submit"}</button>
+                    <button type="submit" class="btn btn-primary" disabled={this.state.loading}>{(this.state.loading)?<span>&nbsp;&nbsp;<div className="spinner"/></span>:"Submit"}</button>
                 </form>
             </div>
             ) ;

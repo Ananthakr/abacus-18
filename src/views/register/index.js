@@ -119,7 +119,7 @@ export default class Register extends Component{
                             </div>
                         : ""
                         }
-                        <button type="submit" className="btn btn-primary">{(this.state.loading)?<span>&nbsp;&nbsp;<div className="spinner"/></span>:"Submit"}</button>
+                        <button type="submit" className="btn btn-primary" disabled={this.state.loading}>{(this.state.loading)?<span>&nbsp;&nbsp;<div className="spinner"/></span>:"Submit"}</button>
                     </form>
                     
                 </div>
