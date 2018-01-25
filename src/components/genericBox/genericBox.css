@@ -14,10 +14,14 @@
 }
 .generic-box-container h6{
     color: #ffffff;
-    font-size: 1.8rem;
+    font-size: 1.65rem;
     padding: 10px;
     text-align: center;
 }
+.generic-box-container h6 > span{
+    font-size:0.7em;
+}
+
 .generic-box-container:hover{
     box-shadow: 4px 4px 10px 2px #444;
     transition: 15s ease-in;

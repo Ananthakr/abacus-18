@@ -15,6 +15,7 @@ export default class GenericItem extends Component{
 
     componentDidMount(){
         this.setState({content:this.props.content});
+        window.scrollTo(0, 0);
     }
 
     render(){

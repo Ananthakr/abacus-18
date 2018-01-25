@@ -4,6 +4,7 @@ import './workshops.css';
 import Menu from '../../components/menu';
 import GenericBox from  '../../components/genericBox';
 import WorkshopImage from '../../images/icons/gears.png';
+import renderHTML from 'react-render-html';
 import data from './workshops.json';
 
 export default class Workshops extends Component{
@@ -17,7 +18,7 @@ export default class Workshops extends Component{
     displayWorkshops(){
         var rows = data.map((res,k) => {return(
             <div key={k} className="col-md-6">
-                <Link to={{pathname: "/workshops/"+res.title,state: { info: res.content, link:res.link} }}><GenericBox title={res.title} image={WorkshopImage} imageTitle="WorkshopIcon"/></Link>
+                <Link to={{pathname: "/workshops/"+res.name,state: { info: res.content, link:res.link} }}><GenericBox title={renderHTML(res.title)} image={WorkshopImage} imageTitle="WorkshopIcon"/></Link>
             </div>
         )}).reduce((r,e,i) => {
             i%2===0&&r.push([]);

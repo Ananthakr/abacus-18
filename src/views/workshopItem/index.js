@@ -7,6 +7,11 @@ import renderHTML from 'react-render-html';
 import './workshopItem.css'
 
 export default class workshopItem extends Component{
+    
+    componentDidMount(){
+        window.scrollTo(0, 0);
+    }
+    
     render(){
         return(
             <main>
