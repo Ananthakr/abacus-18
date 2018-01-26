@@ -13,12 +13,12 @@ export default class Overview extends Component{
    }
 
    onVisibilityChange(isVisible){
-       if(isVisible)
+       if(isVisible){
             this.setState({visible:true});
+        }
    }
 
 
-    
     render(){
         return(
             <section>

@@ -15,10 +15,12 @@ export default class Team extends Component{
 
     onVisibilityChange(isVisible){
         if(isVisible)
+            { 
                 this.setState({visible:true});
+            }
     }
 
-    
+
     render(){
         return(
             <section>
