@@ -44,7 +44,9 @@ export default class Workshops extends Component{
                     </div>
                 </div>
                 <div className="container-fluid events-container">
-                    {this.displayWorkshops()}
+                    {//this.displayWorkshops()
+                    }
+                    <p className="info-text">Will be updated soon</p>
                 </div>
             </main>
         )
