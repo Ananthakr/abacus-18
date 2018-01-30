@@ -26,7 +26,6 @@ export default class workshopItem extends Component{
                     <p>{renderHTML(this.props.location.state.info)}</p>
                     <a href={this.props.location.state.link} className="btn">Book now</a>
                 </div>
-                <CallToAction/>
                 <Footer/>
             </main>
         )
