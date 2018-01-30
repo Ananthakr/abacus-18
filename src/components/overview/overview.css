@@ -9,7 +9,7 @@
     justify-content: center;
     flex-direction: column;
     min-height: 100vh;
-}
+}/*
 .overview-image{
     background-color: #000000;
     background-image:url('light.jpg');
@@ -22,6 +22,14 @@
 }
 .overview-image:hover{
     background-blend-mode: normal;
+}*/
+.overview-video{
+    min-height: 100vh;
+}
+.overview-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
 }
 .overview-item{
     padding: 50px 100px;

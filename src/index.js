@@ -31,7 +31,6 @@ const Register = () => <Async load={import('./views/register')}/>
 
 const NotFound = () => <Async load={import('./views/404/index')}/>
 
-
 ReactDOM.render(
     <Router>
     <div>

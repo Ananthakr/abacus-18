@@ -1,6 +1,7 @@
 import React,{Component} from 'react';
 import VisibilitySensor from 'react-visibility-sensor';
 import './overview.css';
+import Abacus from './abacus.mp4';
 
 export default class Overview extends Component{
     
@@ -25,7 +26,11 @@ export default class Overview extends Component{
             <div className="container-fluid overview-container">
                 
                 <div className="row">
-                    <div className="col-5 overview-image d-none d-lg-block d-xl-block"></div>
+                    <div className="col-5 overview-video d-none d-lg-block d-xl-block">
+                        <video loop="true" autoplay="autoplay" muted>
+                            <source src={Abacus} type="video/mp4" />
+                        </video>
+                    </div>
                     <VisibilitySensor scrollCheck={true} active={!this.state.visible} partialVisibility={true} onChange={this.onVisibilityChange} />
                     <div className="col overview-text-holder">
                         <div className="row">
