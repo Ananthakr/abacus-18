@@ -5,4 +5,21 @@
 .alert-heading{
     font-weight: bold;
     text-align: center;
+    margin-bottom: 2px;
+}
+.alert p{
+    margin-bottom: 0;
+}
+@media(max-width:768px){
+    .alert p{
+        font-size: 0.85rem;
+    }
+    .alert-heading{
+        font-size: 1rem;
+    }
+    .alert{
+        padding: 0.5rem 0.6rem;
+        right:15px;
+        top: 15px;
+    }
 }
