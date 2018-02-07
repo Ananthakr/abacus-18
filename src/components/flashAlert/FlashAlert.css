@@ -1,0 +1,8 @@
+.alert{
+    position: absolute;
+    right: 25px;
+}
+.alert-heading{
+    font-weight: bold;
+    text-align: center;
+}

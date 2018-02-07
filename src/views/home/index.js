@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Async from 'react-code-splitting';
 import './home.css';
 import Menu from '../../components/menu';
+import FlashAlert from '../../components/flashAlert/index.js';
 
 //const Menu = () => <Async load={import('../../components/menu')}/>
 //import Overview from '../../components/overview';
@@ -17,17 +18,28 @@ const CallToAction = () => <Async load={import('../../components/callToAction')}
 //import Footer from '../../components/footer';
 const Footer = () => <Async load={import('../../components/footer')}/>
 
-
+const flashAlertMessages = [
+    {
+        title:"Big Boss is live",
+        content:"<p>Checkout <a href='https://www.facebook.com/abacus.cse' class='alert-link'>our FB page </a> for more updates.</p>"
+    },
+]
 export default class Home extends Component{
    constructor(){
        super();
        this.state = {
            mount:false,
+           activeAlertIndex:0
        }
    }
    
    componentDidMount(){
         this.setState({mount:true});
+        setInterval(this.changeActiveAlert.bind(this), 5000);
+   }
+
+   changeActiveAlert(){
+       this.setState({activeAlertIndex:(this.state.activeAlertIndex+1)%flashAlertMessages.length})
    }
 
     render(){
@@ -35,6 +47,9 @@ export default class Home extends Component{
             <main>
                 <div className="home-container container-fluid">
                     <Menu/>
+                    {
+                        <FlashAlert title={flashAlertMessages[this.state.activeAlertIndex].title} content={flashAlertMessages[this.state.activeAlertIndex].content}/>
+                    }
                     <div className="row home-row">
                         <div className="svg-icon d-flex justify-content-center align-items-center">
                             <div>    
