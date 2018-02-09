@@ -3,6 +3,7 @@ import Async from 'react-code-splitting';
 import './home.css';
 import Menu from '../../components/menu';
 import FlashAlert from '../../components/flashAlert/index.js';
+import Motorq from '../../images/sponsors/motorq-powered-by.png';
 
 //const Menu = () => <Async load={import('../../components/menu')}/>
 //import Overview from '../../components/overview';
@@ -57,6 +58,10 @@ export default class Home extends Component{
                                 <h1><span className="title-1 animated fadeIn">EAT. CODE. SLEEP.<br/></span>
                                 <span className="title-2 animated fadeIn">REPEAT.</span></h1>
                                 <p className="text animated fadeInUp">Welcome to Abacus ’18, the National Level Symposium of<br/>The Department of Computer Science and Engineering, CEG</p>
+                                <div className="powered-by">
+                                    <span>Powered by</span>
+                                    <img src={Motorq} alt="motorq"/>
+                                </div>
                             </div>
                         </div>
                     </div>

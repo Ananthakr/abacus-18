@@ -64,4 +64,15 @@
 .link-text:hover,.link-text:focus,.link-text:active{
     color: #f57e16;
 }
-
+.powered-by{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #F57e16;
+    font-weight: 600;
+}
+.powered-by img{
+    width:200px;
+    margin: 10px;
+}
