@@ -15,7 +15,6 @@ export default class Item extends Component{
                     </div>
                 </div>
                 <GenericItem content={this.props.location.state.info}/>
-                <CallToAction/>
                 <Footer/>
             </main>
         )
