@@ -8,8 +8,17 @@ import './workshopItem.css'
 
 export default class workshopItem extends Component{
     
+    constructor(){
+        super();
+        this.state = {
+            active:0,
+            content:["","",""]
+        }
+    }
+
     componentDidMount(){
         window.scrollTo(0, 0);
+        this.setState({content:this.props.location.state.info});
     }
     
     render(){
@@ -23,8 +32,21 @@ export default class workshopItem extends Component{
                 </div>
                 <div className="workshop-container container-fluid">
                     <span className="back-btn text-center" onClick={() => this.context.router.history.goBack()}>&larr;Back</span>
-                    <p>{renderHTML(this.props.location.state.info)}</p>
-                    <a href={this.props.location.state.link} className="btn">Book now</a>
+                    <ul className="nav justify-content-center animated fadeIn">
+                        <li className="nav-item">
+                            <div className={(this.state.active===0)?"nav-link active":"nav-link"} onClick={()=> this.setState({active:0})}>Description</div>
+                        </li>
+                        <li className="nav-item">
+                            <div className={(this.state.active===1)?"nav-link active":"nav-link"} onClick={()=> this.setState({active:1})}>Agenda</div>
+                        </li>
+                        <li className="nav-item">
+                            <div className={(this.state .active===2)?"nav-link active":"nav-link"} onClick={()=> this.setState({active:2})}>Contact</div>
+                        </li>
+                    </ul>
+                    <div className="tab-container col-md-8 mx-auto">
+                        <p>{renderHTML(this.state.content[this.state.active])}</p>
+                        <a href={this.props.location.state.link} className="btn">Book now</a>
+                    </div>
                 </div>
                 <Footer/>
             </main>

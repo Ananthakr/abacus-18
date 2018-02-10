@@ -1,22 +1,30 @@
 [{
     "title":"Talk with Alexa <br/> <span>Feb 28</span>",
     "name":"Talk With Alexa",
-    "content":"<p>Machine have gone to the next level of its evolution. Lets talk with Alexa to get our things done.</p>",
+    "content":["<p>Machine have gone to the next level of its evolution. Lets talk with Alexa to get our things done.</p>",
+    "<ul><li>Introduction to the Alexa Skills Kit</li><li>Hands-On: Build Your First Alexa Skill</li><li>Session Attributes</li><li>Publishing Your Skills</li><li>Voice Design</li><li>Gathering Data via Slots</li><li>Multi-Turn Dialogs</li><li>Calling External APIs</li><li>Building Skills with Data Lists</li><li>Build and Customize the Recipe Skill</li></ul>",
+    "<p>Pragatheesh -8438367687</p><p>Balaji T - 9629094370</p>"],
     "link":" https://www.townscript.com/widget/workshop-talkwithalexa"
 },
 {
     "title":"Building a Blockchain <br/> <span>Feb 28</span>",
     "name":"Building a Blockchain",
-    "content":"<p>Book now to delve into the trending technology igniting debates among world leaders.</p>",
+    "content":["<p>Book now to delve into the trending technology igniting debates among world leaders.</p>",
+    "<ul><li>Introduction to Blockchain.</li><li>How Blockchain works?</li><li>Applications of Blockchain.</li><li>How Can IBM Help Developers Innovate With Blockchain?</li><li>Hyperledger, a Linux Foundation Project.</li><li>Getting started with Hyperledger.</li><li>A brief introduction to Javascript.</li><li>Creating your first Blockchain application.</li></ul>",
+    "<p>Pragatheesh -8438367687</p><p>Balaji T - 9629094370</p>"],
     "link":"https://www.townscript.com/widget/workshop-buildingblockchain"
 },{
     "title":"Computer Vision: NLP-based <br/> <span>Mar 1</span>",
     "name":"Computer Vision: NLP-based",
-    "content":"<p>Ever wondered how machines understand our language! Come and join us at Compur Vision: NLP Approach to make your computers draw for you</p>",
+    "content":["<p>Ever wondered how machines understand our language! Come and join us at Compur Vision: NLP Approach to make your computers draw for you</p>",
+    "<ul><li>Introduction to NLP and Computer Vision as entities</li><li>How NLP and computer vision shares boundaries?</li><li>What makes NLP a good approach for Vision problems?</li><li>Hands-on session</li></ul><p>The Goal : A futuristic vision.</p>",
+    "<p>Pragatheesh -8438367687</p><p>Balaji T - 9629094370</p>"],
     "link":"https://www.townscript.com/widget/workshop-computervision"
 },{
     "title":"Linux System Administrator Primer <br/> <span>Mar 1</span>",
     "name":"Linux System Administrator",
-    "content":"<p>What it takes to secure your server from malicious code and evil hacks? Join us to learn the end to end pipeline of System Administration</p>",
+    "content":["<p>What it takes to secure your server from malicious code and evil hacks? Join us to learn the end to end pipeline of System Administration</p>",
+    "<ul><li>Understand need of agility</li><li>Available Agile Framework</li><li>Understand DevOps culture and it can be adopted?</li><li>DevOps practices and tools</li><li>Role of Development team and Operation team in DevOps</li><li>Managing Configuration and provisioning servers</li><li>Managing Infrastructure and Infrastructure as Code</li><li>Continuous Deployment on Cloud</li><li>Managing Database and database versioning</li></ul>",
+    "<p>Pragatheesh -8438367687</p><p>Balaji T - 9629094370</p>"],
     "link":"https://www.townscript.com/widget/workshop-linux"
 }]
