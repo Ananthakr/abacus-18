@@ -24,6 +24,10 @@ const flashAlertMessages = [
         title:"Big Boss is live",
         content:"<p>Checkout <a href='https://www.facebook.com/abacus.cse' class='alert-link'>our FB page </a> for more updates.</p>"
     },
+    {
+        title:"Paper Presentation",
+        content:"<p>Mail your abstracts at <a href='mailto:paperpresentation@abacus.org.in' class='alert-link'>paperpresentation@abacus.org.in</a></p>"
+    },
 ]
 export default class Home extends Component{
    constructor(){
