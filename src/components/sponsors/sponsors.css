@@ -39,9 +39,17 @@
     margin: 10px auto;
     filter:grayscale(100%);
     transition: 0.2s linear;
+    cursor:pointer;
 }
 .sponsors-item:hover img{
     filter:none;
+}
+.opteamize img{
+   background-color: #ffffff;
+}
+.sponsors-item p{
+    text-align: center;
+    color: #f2f2f2;
 }
 @media(max-width:960px)and (orientation:portrait){
     .sponsors-title{

@@ -75,4 +75,5 @@
 .powered-by img{
     width:200px;
     margin: 10px;
+    cursor: pointer;
 }

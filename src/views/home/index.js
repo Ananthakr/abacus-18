@@ -64,7 +64,7 @@ export default class Home extends Component{
                                 <p className="text animated fadeInUp">Welcome to Abacus ’18, the National Level Symposium of<br/>The Department of Computer Science and Engineering, CEG</p>
                                 <div className="powered-by">
                                     <span>Powered by</span>
-                                    <img src={Motorq} alt="motorq"/>
+                                    <img src={Motorq} alt="motorq" onClick={()=>window.location = "http://motorq.co/"} />
                                 </div>
                             </div>
                         </div>
