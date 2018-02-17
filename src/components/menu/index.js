@@ -40,8 +40,11 @@ export default class Menu extends Component{
                     <li>
                         <Link to="/workshops">Workshops Registration</Link>
                     </li>
-                    <li>
+                    {/*<li>
                         <Link to={{pathname: "/events/Re'present",state: { info: content} }}>Paper Presentation</Link>
+                    </li>*/}
+                    <li>
+                        <Link to="https://goo.gl/forms/iFtBB5iu1g2Wfw2o1">Accomodation</Link>
                     </li>
                     <li>
                         <Link to="/sa">Student Ambassador</Link>

@@ -21,13 +21,17 @@ const Footer = () => <Async load={import('../../components/footer')}/>
 
 const flashAlertMessages = [
     {
+        title:"Accomodation",
+        content:"<p>For accomodations <a href='https://goo.gl/forms/iFtBB5iu1g2Wfw2o1' class='alert-link'>click here</a></p>"
+    },
+    {
         title:"Big Boss is live",
         content:"<p>Checkout <a href='https://www.facebook.com/abacus.cse' class='alert-link'>our FB page </a> for more updates.</p>"
     },
     {
         title:"Paper Presentation",
-        content:"<p>Mail your abstracts at <a href='mailto:paperpresentation@abacus.org.in' class='alert-link'>paperpresentation@abacus.org.in</a></p>"
-    },
+        content:"<p>Entries closed</p>"
+    }
 ]
 export default class Home extends Component{
    constructor(){
