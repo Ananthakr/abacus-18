@@ -44,7 +44,7 @@ export default class Menu extends Component{
                         <Link to={{pathname: "/events/Re'present",state: { info: content} }}>Paper Presentation</Link>
                     </li>*/}
                     <li>
-                        <Link to="https://goo.gl/forms/iFtBB5iu1g2Wfw2o1">Accomodation</Link>
+                        <a href="https://goo.gl/forms/iFtBB5iu1g2Wfw2o1">Accomodation</a>
                     </li>
                     <li>
                         <Link to="/sa">Student Ambassador</Link>
