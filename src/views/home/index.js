@@ -22,7 +22,7 @@ const Footer = () => <Async load={import('../../components/footer')}/>
 const flashAlertMessages = [
     {
         title:"Accomodation",
-        content:"<p>For accomodations <a href='https://goo.gl/forms/iFtBB5iu1g2Wfw2o1' class='alert-link'>click here</a></p>"
+        content:"<p>For accomodations <a href='https://goo.gl/forms/MI95q83eJOwV5Q8T2' class='alert-link'>click here</a></p>"
     },
     {
         title:"Big Boss is live",
