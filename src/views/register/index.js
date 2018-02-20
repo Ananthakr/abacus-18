@@ -81,8 +81,8 @@ export default class Register extends Component{
                                 <input value={this.state.phone} name="phone_number" onChange={(e)=>this.setState({phone:e.target.value})} id="phone-no" type="text" className="form-control" placeholder="(+91)"/>
                             </div>
                             <div className="form-group col-sm-6">
-                                <label htmlFor="college">College/Univer sity*</label>
-                                <input value={this.state.college} name="college" onChange={(e)=>this.setState({college:e.target.value})} id="college" type="text" className="form-control" placeholder="Your College/Univerisity" required/>
+                                <label htmlFor="college">College/University*</label>
+                                <input value={this.state.college} name="college" onChange={(e)=>this.setState({college:e.target.value})} id="college" type="text" className="form-control" placeholder="Your College/University" required/>
                             </div>
                         </div>
                         <div className="row">
