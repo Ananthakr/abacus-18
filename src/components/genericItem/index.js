@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import './genericItem.css';
-import {Link} from 'react-router-dom';
 import renderHTML from 'react-render-html';
 
 export default class GenericItem extends Component{
