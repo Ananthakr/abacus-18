@@ -9,14 +9,10 @@ import data from './online.json';
 
 export default class OnlineEvents extends Component{
 
-    constructor(){
-        super();
-    }
-
     displayEvents(){
         var rows = data.map((res,k) => {return(
             <div key={k} className="col-md-4">
-                <Link to={{pathname: "/events/"+res.title,state: { info: res.content} }}><GenericBox title={res.title} image={Cloud} imageTitle="TechIcon"/></Link>
+                <Link to={{pathname: "/events/"+res.title }}><GenericBox title={res.title} image={Cloud} imageTitle="TechIcon"/></Link>
             </div>
         )}).reduce((r,e,i) => {
             i%3===0&&r.push([]);

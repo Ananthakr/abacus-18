@@ -1,7 +1,6 @@
 import React,{Component} from 'react';
 import Menu from '../../components/menu';
 import GenericItem from  '../../components/genericItem';
-import CallToAction from '../../components/callToAction';
 import Footer from '../../components/footer';
 
 export default class Item extends Component{
