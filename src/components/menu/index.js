@@ -44,10 +44,10 @@ export default class Menu extends Component{
                         <Link to={{pathname: "/events/Re'present",state: { info: content} }}>Paper Presentation</Link>
                     </li>*/}
                     <li>
-                        <a href="https://goo.gl/forms/MI95q83eJOwV5Q8T2">Accomodation</a    >
+                        <a href="https://goo.gl/forms/MI95q83eJOwV5Q8T2">Accomodation</a>
                     </li>
                     <li>
-                        <Link to="/sa">Student Ambassador</Link>
+                        <a href="/abacus18_schedule.pdf" target="_blank">Download Schedule</a>
                     </li>
                     <li>
                         <Link to="/register">Register</Link>
