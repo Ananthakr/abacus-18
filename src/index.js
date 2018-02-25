@@ -50,7 +50,7 @@ ReactDOM.render(
             <Route exact path="/events/night" component={ NightEvents }/>
             <Route exact path="/events/spritextreme" component={ SpriteXtreme }/>
             <Route path="/events/:name" component={ Item }/>
-            <Route component={NotFound}/>
+            
         </Switch>
     </div>
 </Router>

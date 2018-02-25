@@ -47,7 +47,7 @@ export default class Menu extends Component{
                         <a href="https://goo.gl/forms/MI95q83eJOwV5Q8T2">Accomodation</a>
                     </li>
                     <li>
-                        <a href="https://github.com/Ananthakr/abacus-18/raw/formx/build/abacus18_schedule.pdf" target="_blank">Download Schedule</a>
+                        <a href="/abacus18_schedule.pdf" target="_blank">Download Schedule</a>
                     </li>
                     <li>
                         <Link to="/register">Register</Link>
