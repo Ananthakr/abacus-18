@@ -7,6 +7,7 @@ import Async from 'react-code-splitting';
 import registerServiceWorker from './registerServiceWorker';
 import Item from './views/item';
 import workshopItem from './views/workshopItem';
+import Schedule from './abacus18_schedule.pdf';
 //const Item = () => <Async load={import('./views/item')}/>
 
 //All components are async'ly loaded
@@ -50,7 +51,8 @@ ReactDOM.render(
             <Route exact path="/events/night" component={ NightEvents }/>
             <Route exact path="/events/spritextreme" component={ SpriteXtreme }/>
             <Route path="/events/:name" component={ Item }/>
-            
+            <Route path="/schedule" component={Schedule}/>
+            <Route component={NotFound}/>
         </Switch>
     </div>
 </Router>
