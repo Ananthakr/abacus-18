@@ -7,6 +7,7 @@ import Motorq from '../../images/sponsors/motorq.png';
 import IVTL from '../../images/sponsors/ivtl.png';
 import Opteamize from '../../images/sponsors/opteamize.png';
 import WeKanCode from '../../images/sponsors/wekancode.png';
+import Delicon from '../../images/sponsors/delicon.png';
 
 export default class Sponsors extends Component{
      
@@ -50,6 +51,9 @@ export default class Sponsors extends Component{
                     <div className="row">
                         <div className={(this.state.visible)?"col-md-3 sponsors-item animated fadeInUp":"col-md-3 sponsors-item invisible"}>
                             <img src={WeKanCode} alt="WeKanCode" onClick={()=>window.location = "http://www.wekancode.com/"}/>
+                        </div>
+                        <div className={(this.state.visible)?"col-md-3 sponsors-item animated fadeInUp":"col-md-3 sponsors-item invisible"}>
+                            <img src={Delicon} alt="Delicon" onClick={()=>window.location = "http://www.delicon.org/"}/>
                         </div>
                         <div className={(this.state.visible)?"col-md-3 sponsors-item opteamize animated fadeInUp":"col-md-3 sponsors-item invisible"}>
                             <p>Digital partner</p>
