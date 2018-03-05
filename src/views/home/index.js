@@ -18,7 +18,7 @@ const Sponsors = () => <Async load={import('../../components/sponsors')}/>
 const CallToAction = () => <Async load={import('../../components/callToAction')}/>
 //import Footer from '../../components/footer';
 const Footer = () => <Async load={import('../../components/footer')}/>
-
+/*
 const flashAlertMessages = [
     {
         title:"Accommodation",
@@ -32,7 +32,7 @@ const flashAlertMessages = [
         title:"Paper Presentation",
         content:"<p>Entries closed</p>"
     }
-]
+]*/
 export default class Home extends Component{
    constructor(){
        super();
@@ -44,28 +44,28 @@ export default class Home extends Component{
    
    componentDidMount(){
         this.setState({mount:true});
-        setInterval(this.changeActiveAlert.bind(this), 5000);
+       // setInterval(this.changeActiveAlert.bind(this), 5000);
    }
 
    changeActiveAlert(){
-       this.setState({activeAlertIndex:(this.state.activeAlertIndex+1)%flashAlertMessages.length})
+       //this.setState({activeAlertIndex:(this.state.activeAlertIndex+1)%flashAlertMessages.length})
    }
 
     render(){
         return(
             <main>
                 <div className="home-container container-fluid">
-                    <Menu/>
-                    {
-                        <FlashAlert title={flashAlertMessages[this.state.activeAlertIndex].title} content={flashAlertMessages[this.state.activeAlertIndex].content}/>
+                    
+                    {   //<Menu/>
+                        //<FlashAlert title={flashAlertMessages[this.state.activeAlertIndex].title} content={flashAlertMessages[this.state.activeAlertIndex].content}/>
                     }
                     <div className="row home-row">
                         <div className="svg-icon d-flex justify-content-center align-items-center">
                             <div>    
-                                <span className="info-text animated fadeInLeft">&mdash; Feb 27,28 Mar 1</span>
-                                <h1><span className="title-1 animated fadeIn">EAT. CODE. SLEEP.<br/></span>
-                                <span className="title-2 animated fadeIn">REPEAT.</span></h1>
-                                <p className="text animated fadeInUp">Welcome to Abacus ’18, the National Level Symposium of<br/>The Department of Computer Science and Engineering, CEG</p>
+                                {//<span className="info-text animated fadeInLeft">&mdash; Feb 27,28 Mar 1</span>
+                                }<h1><span className="title-1 animated fadeIn">Show's over folks.<br/></span></h1>
+                                {//<span className="title-2 animated fadeIn">REPEAT.</span></h1>
+                                }<p className="text animated fadeInUp">Thank you making Abacus ’18, a grand success.<br/> See you in 525,600 minutes.</p>
                                 <div className="powered-by">
                                     <span>Powered by</span>
                                     <img src={Motorq} alt="motorq" onClick={()=>window.location = "http://motorq.co/"} />
@@ -74,7 +74,7 @@ export default class Home extends Component{
                         </div>
                     </div>
                 </div>
-                {(this.state.mount)?
+                {/*(this.state.mount)?
                     <div>
                         <Overview/>
                         <About/>
@@ -84,7 +84,7 @@ export default class Home extends Component{
                         <Footer/>
                     </div>
                     : ""
-                }
+                */}
             </main>
         )
     }
